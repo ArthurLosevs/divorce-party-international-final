@@ -1,0 +1,114 @@
+import structure from './group-structure.json';
+import { refs } from './evidence';
+import { facts } from './inputs';
+import { uncertainties } from './uncertainties';
+import { analyses } from './analyses';
+import type { Accounts } from '@/lib/accounting';
+import type { Amount, Confidence, Decision, Effect, ReviewState, SourceRef } from '@/lib/types';
+import { euro } from '@/lib/formatting';
+
+const effect=(baseline:string,profit:Amount,cash:Amount,assets:Amount,liabilities:Amount,equity:Amount,note='Comparison only; never sum decision effects as journals.'):Effect=>({kind:'correction/reclassification',baseline,profit,cash,assets,liabilities,equity,note});
+const information=():Effect=>({...effect('Information or cross-reference; not another journal','N/A','N/A','N/A','N/A','N/A'),kind:'duplicated/cross-reference treatment'});
+type Position={answer:string;evidence:SourceRef[];treatment:string;confidence:Confidence;calculation:string;effect:Effect};
+
+export function makeDecisions(a:Accounts,review:ReviewState):Decision[] {
+ const positions=new Map<number,Position>();
+ const e=euro;
+ const put=(ids:number|number[],answer:string,evidence:SourceRef[],treatment:string,confidence:Confidence='High',calculation='',impact=information())=>{
+  for(const id of typeof ids==='number'?[ids]:ids)positions.set(id,{answer,evidence,treatment,confidence,calculation,effect:impact});
+ };
+ const correction=(label:string,n:number)=>effect(label,-n,0,-n,0,-n);
+ for(let i=0;i<4;i++){
+  const c=a.revenueRows[i];
+  put(i+1,`${e(c.cash)} collected against ${c.invoice}; reduce the existing receivable. The receipt is not a second sale.`,refs.revenue,c.invoice,'High',`${e(c.revenue)} revenue − ${e(c.cash)} received = ${e(c.grossAR)} gross outstanding.`);
+  put(i+64,`Recognise ${e(c.revenue)} for ${c.name}: delivery/acceptance occurred by 31 August. Cash collection is accounted for separately.`,refs.revenue,c.invoice,'High',`${e(c.revenue)} contract revenue.`,effect('Recognising the delivered credit sale versus no sale entry, before cash settlement',c.revenue,0,c.revenue,0,c.revenue));
+ }
+ put(5,`${e(a.openingARCollection)} is collection of opening receivables, not current-period revenue. It proves a minimum opening AR balance, not its completeness.`,refs.bank,'opening-ar','Medium');
+ for(let i=4;i<6;i++){
+  const c=a.revenueRows[i];
+  put(i+2,`${c.name}: revenue ${e(c.revenue)}, bank settlements ${e(c.cash)}, gross receivable ${e(c.grossAR)}. Recognise provisionally from the Jan–Aug CRM; order-level fulfilment and platform reconciliation remain required.`,[...refs.revenue,...refs.bank],c.invoice,'Medium');
+ }
+ put(8,'New Beginnings: €60,000 advance for September delivery; recognise cash and a customer-deposit liability, with no August revenue.',refs.deposits,'deposits');
+ put(9,'Fresh Freedom: €30,000 advance for September delivery; recognise cash and a customer-deposit liability, with no August revenue.',refs.deposits,'deposits');
+ a.supplierRows.forEach((s,i)=>put(i+10,`${e(s.paid)} paid to ${s.name}: reduce trade payables. Purchases of ${e(s.received)} follow goods received, not payment; confirmed closing payable ${e(s.payable)}.`,refs.purchases,'ap','High'));
+ for(let id=14;id<=21;id++)put(id,`The monthly payroll amount is UNKNOWN: the supplied bank export aggregates Jan–Aug payroll. Use total cash paid ${e(a.payrollCash)} and expense ${e(a.payrollExpense)}; monthly allocations remain unsupported by the available evidence.`,refs.payroll,'payroll','Low','15,000 opening accrual + 248,000 expense − 231,000 cash = 32,000 closing accrual.');
+ const costs:[number,number,string,string][]=[[22,52,'RENT','Rent'],[23,53,'MKT','Marketing'],[24,54,'SOFT','Software'],[25,55,'UTIL','Utilities']];
+ costs.forEach(([first,second,key,label])=>{
+  const amount=a.operating.find(o=>o.id===key)!.cash;
+  put([first,second],`${label}: ${e(amount)} recognised as a period operating expense on the bank-supported basis. Invoice coverage and accrual completeness remain qualified.`,refs.expenses,key,'Medium');
+ });
+ put([26,45,77],`Expense the ${e(a.operating.find(o=>o.id==='REPAIR')!.cash)} R-771 restoration. It restores normal performance and does not establish an improvement; exclude it from PPE additions.`,refs.ppe,'repair','High','€10,000 expense; no additional cash movement on reclassification.',correction('Repair expensing versus incorrectly capitalising the already-paid repair',10000));
+ put([27,43],`Capitalise packaging machine A-910 at ${e(facts.packagingMachine)}; available for use 10 May. The €60,000 payment is investing cash flow. Depreciation is included separately in the adopted period charge.`,refs.ppe,'machine','High','Original invoice and bank addition = €60,000; do not use €68,000.',effect('Capitalising the already-paid machine versus immediate expensing',facts.packagingMachine,0,facts.packagingMachine,0,facts.packagingMachine));
+ put([28,44],`Capitalise photo booth P-404 at ${e(facts.photoBooth)}; available for use 10 May. The €20,000 payment is investing cash flow. Depreciation is included separately.`,refs.ppe,'booth','High','Original invoice and bank addition = €20,000.',effect('Capitalising the already-paid booth versus immediate expensing',facts.photoBooth,0,facts.photoBooth,0,facts.photoBooth));
+ put([29,42],`${e(a.borrowing)} bank advance is financing, not income. Increase loan principal; recognise no profit from borrowing.`,refs.debt,'borrowing','High','100,000 opening + 50,000 advance − 19,000 repaid = 131,000.',effect('Reclassifying an already-received advance from income to loan payable',-a.borrowing,0,0,a.borrowing,-a.borrowing));
+ put([30,69],`${e(a.principalRepaid)} principal repayment reduces debt and is financing cash flow. It is not an expense.`,refs.debt,'principal');
+ put(31,`Interest expense ${e(facts.interestExpense)}, cash paid ${e(a.interestPaid)}, closing payable ${e(facts.confirmedInterestPayable)}. Interest paid is operating cash flow under the consistently applied presentation.`,refs.debt,'interest','High','12,000 − 10,000 = 2,000.');
+ put([32,46],`Treat €70,000 villa spending as an owner distribution, excluding it from business expenses and employee payroll. Retain the 2024 booking-photo / 2026 bank-date conflict; recovery is unproven.`,refs.owner,'owner-distribution','Low','One original cash outflow, no second founder-bonus payment.',effect('Reclassifying already-expensed and already-paid villa spending as a distribution',70000,0,0,0,0,'Profit rises €70,000, offset by an equal direct equity distribution; total equity and cash do not change on reclassification.'));
+ put([33,47],`Treat €40,000 owner-card spending as an owner distribution, not normal operating expense or additional payroll. Any enforceable recovery requires separate evidence.`,refs.owner,'owner-distribution','Medium','Owner distributions total €70,000 + €40,000 = €110,000.',effect('Reclassifying already-expensed and already-paid owner-card spending as a distribution',40000,0,0,0,0,'Profit rises €40,000, offset by an equal direct equity distribution; no duplicate cash or equity charge.'));
+ put([34,60,78],`No supported insurance amount is recognised (adopted amount €0). Actual insurance expense and any opening prepayment remain UNKNOWN because reliable policy/prepayment evidence is absent. This is not evidence of a factual zero.`,refs.missing,'insurance','Low','Recognised amount 0; unquantified insurance exposure excluded from adopted totals.');
+ put([35,58,72],`Write off the ${e(facts.damagedStock)} unsaleable stock once in cost of sales. Physical presence does not support recoverable value. Keep the separate €2,000 disposal quote outside provisions unless an obligation is established.`,refs.inventory,'stock-write-down','High',`${e(a.movementGrossInventory)} recorded gross closing stock − ${e(facts.damagedStock)} write-off = ${e(a.inventory)} baseline inventory. Physical count remains a separate sensitivity.`,correction('Stock impairment versus retaining damaged stock at cost',facts.damagedStock));
+ put([36,57,71],`Recognise one ${e(facts.badDebt)} R-17 receivable impairment. Subsequent liquidation evidence confirms conditions existing on 31 August. Retain the valid sale and avoid an additional revenue reversal.`,refs.impairment,'r17','High','€186,000 gross AR − €18,000 impairment = €168,000 net AR.',correction('Receivable impairment versus no allowance',facts.badDebt));
+ put([37,59,73],`Recognise one ${e(a.basis.legal)} legal provision for the probable claim at counsel’s best estimate. The €20,000–€30,000 range is uncertainty, not three separate liabilities.`,refs.legal,'legal','Medium','Expense and liability €25,000; no cash payment.',effect('Recording the probable legal claim versus no provision',-a.basis.legal,0,0,a.basis.legal,-a.basis.legal));
+ put(38,`${e(a.purchases)} materials purchased on receipt of goods. Payments reduce AP separately; supplier confirmations support closing AP.`,refs.purchases,'purchases','High','130,000 + 120,000 + 95,000 + 114,000 = 459,000.');
+ put(39,`Customer-related cash receipts total ${e(a.customerReceipts+a.openingARCollection+a.deposits)}: ${e(a.customerReceipts)} current sales collections + ${e(a.openingARCollection)} old AR + ${e(a.deposits)} September deposits. They are not all current revenue.`,refs.bank,'customer-receipts');
+ put([40,90],`Closing bank cash is ${e(a.closingCash)}, matching the bank export and external confirmation.`,refs.bank,'cash','High',`${e(a.openingCash)} + ${e(a.cfo)} − ${e(-a.cfi)} − ${e(-a.cff)} = ${e(a.closingCash)}.`);
+ put([41,68],`Exclude ${e(a.deposits)} September customer advances from August revenue. Recognise a liability until delivery, while retaining the cash receipt.`,refs.deposits,'deposits','High','60,000 + 30,000 = 90,000.',effect('Reclassifying already-received advances incorrectly recorded as sales',-a.deposits,0,0,a.deposits,-a.deposits));
+ put([48,75],`Retain recorded materials consumed ${e(a.materialsUsed)} and primary closing inventory ${e(a.inventory)}. Physical usable stock ${e(a.physicalInventory)} conflicts by ${e(a.inventoryDifference)}. The count-based alternative uses ${e(a.physicalCountAlternative.materialsUsed)} consumption and ${e(a.physicalCountAlternative.correctedProfit)} profit only if additional reconciliation evidence substantiates the difference. No unexplained balancing entry is recognised.`,refs.inventory,'inventory','Medium',`${e(facts.openingInventory)} + ${e(a.purchases)} − ${e(a.materialsUsed)} − ${e(facts.damagedStock)} = ${e(a.inventory)}.`,{...effect('Primary recorded-consumption baseline compared with the conditional physical-count alternative',-a.inventoryDifference,0,-a.inventoryDifference,0,-a.inventoryDifference,'The baseline is lower by the unresolved difference. This is a scenario comparison, not another journal or write-off.'),kind:'analytical comparison only'});
+ put([49,87],`${e(a.directPayroll)} event/service payroll belongs in cost of sales because it supports delivery of services. Total employee payroll is ${e(a.payrollExpense)}; this is a functional reclassification only.`,refs.payroll,'direct-payroll','High',`Cost of sales: ${e(a.materialsUsed)} materials + ${e(a.directPayroll)} direct payroll + ${e(facts.damagedStock)} damage = ${e(a.costOfSales)}.`,effect('Moving event payroll from administration to cost of sales',0,0,0,0,0,'Gross profit decreases €80,000 versus an administration presentation; total profit is unchanged.'));
+ put(50,`${e(a.salesPayroll)} sales payroll is an operating expense, not cost of sales or an owner distribution.`,refs.payroll,'sales-payroll');
+ put(51,`${e(a.adminPayroll)} office payroll is an operating expense. Sales plus office payroll total ${e(a.salesPayroll+a.adminPayroll)}.`,refs.payroll,'office-payroll');
+ put([56,74],`Use ${e(a.depreciation)} period depreciation, as adopted by both independent analyses. The original invoices available here corroborate additions only. The asset workbook cited by both agents, 08 Assets Repairs Leases Maybe.xlsx, is missing from this project, so the estimate is not independently verified here.`,refs.ppe,'depreciation','Low','45,000 opening accumulated depreciation + 24,000 period charge = 69,000.',correction('Adopted depreciation versus no period charge',a.depreciation));
+ put([61,79],`Accrue closing interest payable ${e(facts.confirmedInterestPayable)}. Do not confuse unpaid interest with principal or add a second interest expense.`,refs.debt,'interest','High','12,000 incurred − 10,000 paid = 2,000 payable; opening zero is inferred.');
+ put([62,80],`Closing payroll payable is ${e(a.payrollClosing)}; retain the opening accrual and distinguish expense from cash. Monthly allocation remains unknown.`,refs.payroll,'payroll','Medium','15,000 + 248,000 − 231,000 = 32,000.');
+ put([63,84],`Recognise confirmed supplier payables ${e(a.ap)}. Opening AP ${e(a.inferredOpeningAP)} is inferred from purchases, payments and closing confirmations, subject to completeness.`,refs.purchases,'ap','Medium','45,000 + 459,000 − 378,000 = 126,000.');
+ put(70,`Present ${e(a.capex)} equipment acquisitions as investing cash outflows and PPE additions. Repairs remain operating expense; no cash flow arises when depreciation is recorded.`,refs.ppe,'capex','High','60,000 machine + 20,000 booth = 80,000.');
+ put(76,`Closing net identified receivables are ${e(a.netAR)} after the single R-17 impairment. Opening AR completeness and individual web deliveries remain qualified.`,refs.revenue,'r17','Medium','960,000 revenue − 774,000 collections − 18,000 impairment = 168,000.');
+ put(81,`Recognise ${e(a.deposits)} customer deposits as liabilities for unperformed September deliveries; release to revenue only on performance.`,refs.deposits,'deposits');
+ put(82,`Adopt closing gross PPE ${e(a.closingGrossPPE)} using opening cost ${e(a.openingGrossPPE)} plus verified additions. Opening cost is an adopted assumption that is not independently verified without the original asset register.`,refs.ppe,'ppe-cost','Low','180,000 + 60,000 + 20,000 = 260,000. Do not substitute 172,000 / 68,000.');
+ put(83,`Adopt closing accumulated depreciation ${e(a.closingAccumulatedDepreciation)} and net PPE ${e(a.netPPE)}. Opening accumulated depreciation and the period charge are adopted assumptions not independently verified from the available original evidence.`,refs.ppe,'depreciation','Low','45,000 + 24,000 = 69,000; 260,000 − 69,000 = 191,000.');
+ put(85,`Closing bank loan principal is ${e(a.debtClosing)} and agrees with external confirmation. Full maturity/covenant terms are still required to split current and non-current balances.`,refs.debt,'loan','High','100,000 + 50,000 − 19,000 = 131,000.');
+ put(86,`Materials consumed are ${e(a.materialsUsed)} from the original warehouse record. Retain the ${e(a.inventoryDifference)} physical-count conflict as unresolved. Alternative consumption ${e(a.physicalCountAlternative.materialsUsed)} is sensitivity only, subject to additional reconciliation evidence.`,refs.inventory,'inventory','Medium',`${e(facts.openingInventory)} + ${e(a.purchases)} − ${e(a.materialsUsed)} − ${e(facts.damagedStock)} damage = ${e(a.inventory)} primary closing stock.`);
+ put(88,`Owner distributions total ${e(a.distributions)}. Exclude the villa and card from payroll and normal expenses, and count their cash outflows once. Adopted equity is ${e(a.closingEquity)}; opening equity remains unverified.`,refs.owner,'owner-distribution','Medium',`${e(a.openingEquity)} opening equity + ${e(a.knownResult)} profit − ${e(a.distributions)} distributions = ${e(a.closingEquity)}.`);
+ put(89,`Corrected/provisional profit is ${e(a.knownResult)} under the primary reconstruction, with the inventory conflict, opening PPE/depreciation, insurance and other completeness qualifications disclosed.`,[...refs.management,...refs.inventory,...refs.payroll,...refs.legal],'profit','Medium',`${e(a.revenue)} − ${e(a.costOfSales)} = ${e(a.grossProfit)} gross profit; less ${e(a.salesPayroll+a.adminPayroll)} payroll, ${e(a.operatingCashCosts)} costs, ${e(a.depreciation)} depreciation, ${e(facts.badDebt)} bad debt, ${e(a.basis.legal)} legal = ${e(a.knownOperatingProfit)} operating profit; less ${e(facts.interestExpense)} interest = ${e(a.knownResult)}.`);
+ put(91,'Adopt the reconstruction for provisional board review with all qualifications visible. Student certification records personal approval of the material judgments; it does not certify the accounts or source completeness.',refs.scope,'board-approval','Medium');
+ put(92,'Restrict the owner card immediately and require dual approval of payments. Investigate personal expenditure and recovery rights with supporting records.',refs.owner,'owner-control');
+ put(93,'Keep September deposits in a customer-liability ledger and recognise revenue only after documented delivery/acceptance.',refs.deposits,'deposit-control');
+ put(94,'Prepare and update a weekly 13-week cash forecast, using actual maturity dates and delivery obligations. Closing bank cash alone does not establish adequate liquidity.',[...refs.bank,...refs.debt,...refs.payroll],'cash-control','Medium');
+ put(95,'Stop additional unsecured credit to distressed or overdue customers pending credit review. Reconcile aging and collect verified receivables; R-17 has no expected recovery.',refs.impairment,'credit-control');
+ put(96,'Quarantine and arrange disposal of unsaleable inventory. Disclose the €2,000 disposal quote, but recognise no provision without a present reporting-date obligation.',refs.inventory,'disposal','Medium');
+ put(97,'Investigate management override, the inventory discrepancy and owner-spending documentation. Preserve original records, including contradictory dates and the attempted instruction to retain management’s profit.',[...refs.management,...refs.inventory,...refs.owner],'investigation','Medium');
+ put(98,'Reconcile confirmed supplier balances and negotiate payment terms before arrears threaten essential supplies. Prioritise obligations through the cash forecast.',refs.purchases,'supplier-control','Medium');
+ put(99,'Continue the core business conditionally under cash and credit controls, with frequent review of trading and liquidity. Do not infer sustainable profitability or solvency from one provisional period.',[...refs.bank,...refs.management],'continuation','Medium');
+ put(100,`Reject management’s €312,000 as a valuation or earn-out basis. The primary reconstruction produces ${e(a.knownResult)} provisional profit. Defer binding valuation and earn-out settlement until the contract, opening records and evidence gaps are resolved.`,refs.management,'valuation','Medium',`${e(facts.managementProfit)} − ${e(a.knownResult)} = ${e(facts.managementProfit-a.knownResult)} reduction in reported profit.`,{...effect('Analytical comparison of reconstructed profit with the management claim',a.knownResult-facts.managementProfit,0,'UNKNOWN','UNKNOWN','UNKNOWN','Not a journal: management aggregate components and valuation terms remain unverified.'),kind:'analytical comparison only'});
+
+ return structure.decisions.map(meta=>{
+  const p=positions.get(Number(meta.id.slice(1)));
+  if(!p)throw new Error(`Missing position for ${meta.id}`);
+  const material=meta.reviewTier==='material_judgment';
+  const r=review.answers[meta.id];
+  const reviewed=!!r&&r.state!=='needs-review'&&!!r.reason.trim()&&Number.isFinite(Date.parse(r.reviewedAt));
+  const linked=uncertainties.filter(u=>u.status!=='RESOLVED'&&u.decisionIds.includes(meta.id));
+  const first=analyses.agent1.positions[meta.id],second=analyses.agent2.positions[meta.id],comparison=analyses.comparisons[meta.id];
+  if(material&&(!first||!second||!comparison))throw new Error(`Missing original agent review for ${meta.id}`);
+  const agentReviews=material?{
+   agent1:{...first,sourceUrl:analyses.agent1.url,sourceFile:analyses.agent1.artifactPath,sha256:analyses.agent1.sha256},
+   agent2:{...second,sourceUrl:analyses.agent2.url,sourceFile:analyses.agent2.artifactPath,sha256:analyses.agent2.sha256},
+  }:undefined;
+  return {...meta,reviewTier:material?'material_judgment':'operational',type:material?'material':'operational',
+   answer:p.answer,recommendedAnswer:p.answer,finalAnswer:reviewed?r.answer:material?'PENDING — personal review':p.answer,
+   evidence:p.evidence,confidence:p.confidence,calculation:p.calculation||'See the financial statements and supporting schedule; this conclusion does not represent an additional entry.',
+   effect:p.effect,underlyingTreatmentId:p.treatment,
+   adjustmentIds:Object.entries(a.adjustments).filter(([,x])=>x.treatment===p.treatment).map(([id])=>id),
+   uncertaintyIds:linked.map(u=>u.id),uncertainty:linked.map(u=>u.issue).join('; ')||'No additional issue identified for this decision; overall evidence qualifications still apply.',
+   certificationState:reviewed?'CERTIFIED':material?'PENDING':'N/A — operational decision',
+   templateMapping:'The decision ID, question, category and review tier follow the supplied reference. Compliance with the official submission format remains unverified.',
+   agent1Original:material?first.proposal:'N/A — operational decision',agent2Original:material?second.proposal:'N/A — operational decision',comparison:material?comparison.text:'N/A — operational decision',
+   agentsDisagree:material?comparison.disagree:'N/A',disagreementType:material?comparison.type:'N/A',studentAnswer:reviewed?r.answer:material?'PENDING':'N/A — material-judgment certification scope',studentReasoning:reviewed?r.reason:material?'PENDING — student approval of reasoning required':'N/A — no separate personal review recorded for this operational decision',
+   proposedStudentPosition:p.answer,proposedReasoning:material?first.reasoningEvidence:p.calculation,
+   proposedReasoningSource:material?reviewed?'Existing Agent 1 reasoning and evidence explicitly adopted by the student; Agent 2’s challenge is preserved separately. Source attribution is unchanged.':'Agent 1 reasoning and evidence, retained for student review; Agent 2’s challenge is shown separately. This is not personal student reasoning.':'Accounting reconstruction; separate personal approval is outside the material-judgment certification scope.',
+   finalPositionStatus:reviewed?'APPROVED / CERTIFIED':material?'PENDING — proposed position awaits personal approval':'N/A — operational decision; no separate personal approval recorded',
+   ...(agentReviews?{agentReviews,aiComparison:{...comparison,finalDiffersFromAgent1:reviewed&&r.answer===p.answer?comparison.proposedDiffersFromAgent1:'PENDING' as const,finalDiffersFromAgent2:reviewed&&r.answer===p.answer?comparison.proposedDiffersFromAgent2:'PENDING' as const}}:{}),
+   studentChangedAIAnswer:reviewed?r.state==='modified':material?'PENDING':'N/A',reviewedAt:reviewed?r.reviewedAt:material?'PENDING':'N/A',choices:[],
+  } satisfies Decision;
+ });
+}

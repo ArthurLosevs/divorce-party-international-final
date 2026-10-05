@@ -1,0 +1,9 @@
+'use client';
+import type { SourceRef, StatementLine } from '@/lib/types';
+import { evidence } from '@/data/evidence';
+import { euro } from '@/lib/formatting';
+import { ArrowUpRight } from 'lucide-react';
+export function Badge({text}:{text:string}){const style=/^(PASS|CONFIRMED|High|CERTIFIED|COMPLETE|RESOLVED|PERSONALLY REVIEWED)$/.test(text)?'good':/OPEN|Low|UNKNOWN|NOT DETERMINABLE/.test(text)?'risk':/PENDING|QUALIFIED|Medium|PROVISIONAL|ATTESTED/.test(text)?'warn':'neutral';return <span className={`badge ${style}`}><i/>{text}</span>;}
+export function EvidenceRefs({sources}:{sources:SourceRef[]}){return <span className="evidence-refs">{sources.map((s,i)=>{const e=evidence.find(e=>e.id===s.id);const page=/p\.\s*(\d+)/.exec(s.locator)?.[1];return <a key={s.id+i} className="evidence-badge" href={e?.url+(page?`#page=${page}`:'')} title={`${e?.file} · ${s.locator}`} target="_blank" rel="noreferrer">{s.id}<ArrowUpRight size={11}/><span className="sr-only"> {s.locator}</span></a>;})}</span>;}
+export function FinancialTable({rows,onSchedule}:{rows:StatementLine[];onSchedule?:(id:string)=>void}){return <div className="table-scroll"><table className="financial-table"><thead><tr><th>Account / treatment</th><th>Evidence</th><th className="right">EUR</th></tr></thead><tbody>{rows.map(r=><tr key={r.id} className={`${r.total?'total':''} ${r.amount==='UNKNOWN'?'unknown-row':''}`} data-line-id={r.id} data-amount={r.amount}><td><span>{r.label}</span>{r.note&&<small>{r.note}</small>}{onSchedule&&<button className="schedule-link" onClick={()=>onSchedule(r.schedule)}>Schedule ↗</button>}</td><td><EvidenceRefs sources={r.evidence}/></td><td className="amount">{euro(r.amount)}</td></tr>)}</tbody></table></div>;}
+export function SectionTitle({eyebrow,title,children}:{eyebrow:string;title:string;children?:React.ReactNode}){return <div className="section-title"><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{children&&<p>{children}</p>}</div>;}

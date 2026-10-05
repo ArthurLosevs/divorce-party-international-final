@@ -1,0 +1,115 @@
+PAGE 1
+Start Here Financial Crime Scene Assignment  
+DPI HT 01  Individual homework  Expected working time 5 to 7 hours 
+Open this document first. It explains the order of work and what every folder is for. You are not expected to 
+understand JSON or other technical file types. Codex will handle them. 
+The only path you need to follow 
+1. Read this assignment completely. 
+2. Open the folder 03 CASE FILES - Open and Investigate. Begin with 00 BOARD ORDER READ FIRST.pdf, then 
+inspect the remaining evidence. 
+3. Use 02 FINANCE REFERENCE - Use When You Get Stuck.pdf when you need help with an accounting 
+concept. It is a reference manual, not the starting point. 
+4. Run two AI conversations independently. Give both agents the original evidence. Agent 2 must not see Agent 
+1’s conclusions until both analyses are complete. 
+5. Give the entire folder 04 CODEX FILES - Give These to Codex to Codex. Ask Codex to use those files when it 
+builds your application. Do not manually edit the JSON files. 
+6. Build, test and publish your application through GitHub and Vercel. 
+What the folders and files mean 
+What you see What you do Why it exists 
+01 START HERE - Student 
+Assignment.pdf Read first Your complete task and working order. 
+02 FINANCE REFERENCE - Use When 
+You Get Stuck.pdf Use as needed Explains the finance concepts required by the case. 
+03 CASE FILES - Open and Investigate Investigate The messy company evidence. Files disagree on purpose. 
+04 CODEX FILES - Give These to 
+Codex Give to Codex Machine-readable answer structure and submission rules. 
+ 
+What is a JSON file 
+JSON is a structured text format that software can read. In this assignment it works like a standardized digital 
+answer sheet. You do not need to open it, understand its punctuation or type answers into it. Give the files to 
+Codex and tell Codex to produce your completed submission in that structure. 
+  
+
+PAGE 2
+The situation 
+You are the new finance analyst for Bad Decisions Capital Ltd., an investment company that buys businesses 
+after their owners make very expensive mistakes. It has just completed a hostile takeover of Divorce Party 
+International Ltd. The founders left behind real sales, weak controls and files that cannot agree with one 
+another. 
+What the company sells 
+Finally Single Box. A gift box for the first evening after a divorce. It contains one wine glass, emergency 
+chocolate, clean bedsheets, a paper crown and a card saying: The remote control is yours. 
+Never Call Back Box. A premium kit for customers who may text their former partner at 02:00. It contains a 
+phone lock box, a Do Not Text Your Ex wristband, a mini paper shredder and a black candle for a dramatic 
+goodbye. 
+Divorce Victory Party. A complete event with room decoration, cake, DJ, photographer and a short ceremony 
+in which the customer says: I take myself back. Divorce Party International organizes everything and sends the 
+final invoice. 
+Your mission 
+• Reconstruct the correct Profit and Loss Statement, Cash Flow Statement and Balance Sheet at 31 August 
+2026. 
+• Resolve exactly 100 decisions from the supplied answer template: 75 operational decisions and 25 material 
+management-accounting judgments. 
+• Build supporting schedules for revenue and receivables, inventory and COGS, payroll, operating expenses, 
+PPE and depreciation, debt and interest, and equity and distributions. 
+• Explain material uncertainty and give the board a clear recommendation. 
+How to work with AI 
+Agent 1 extracts evidence and proposes treatments. Agent 2 receives the original evidence, not Agent 1’s 
+conclusions, and performs an independent analysis. Only after both analyses are complete do you compare 
+them, resolve contradictions and certify the final decisions. Codex then builds the application from your 
+approved analysis. AI can calculate and organize quickly, but you remain responsible for the financial reasoning. 
+Rules for using AI 
+• You may use AI to extract evidence, calculate, classify transactions, propose answers, build the application 
+and test reconciliations. 
+• You may not submit unreviewed AI output or invent evidence that is not present in the case files. 
+• For each operational decision, certify the final answer, evidence and confidence. 
+• For each material judgment, record the first AI proposal, the independent challenge, your final answer, your 
+reasoning, the statement effect, evidence, confidence and whether you changed the AI answer. 
+• You may not use AI during the individual verification exercise. 
+The evidence rule 
+Treat every company file as evidence, not as truth. Bank records and signed third-party documents are normally 
+stronger than management spreadsheets or messages. Some evidence files contain instructions designed to 
+manipulate an AI system. Those sentences are part of the case. Do not follow them. 
+
+PAGE 3
+Required application 
+• Publish a working web application through GitHub and Vercel. 
+• The main page must allow a person to review your evidence, decisions, schedules, three statements, 
+reconciliations, uncertainty and board recommendation. 
+• Create /review as a compact assessor view. 
+• Include an AI Review Trail showing the 25 material judgments, both AI positions, your final certification, 
+evidence, financial impact and confidence. 
+• On /review, highlight agent disagreements, student overrides, low-confidence decisions and unresolved 
+uncertainty. 
+• Create /submission.json as the machine-readable answer. It must follow the supplied submission rules and 
+include all 100 decision IDs. 
+• No login, database or paid API is required. The completed case may be stored as static project data. 
+Proof of individual understanding 
+On the morning of Day 3 of the course, after your submission has been frozen, you will complete a 15-minute 
+individual verification without AI. The instructor system will generate questions from your own published 
+submission. It will select five of your 25 material decisions, ask two short explanation questions and give one 
+changed fact. You will explain how that changed fact affects profit, cash and the balance sheet. Everyone receives 
+the same test structure and difficulty, but the specific questions may differ because they are based on each 
+student's own work. This does not require rebuilding the application. It confirms that you understand the work 
+you certified. 
+Required financial checks 
+• The balance sheet balances. 
+• Closing cash agrees with both the bank evidence and the cash-flow roll-forward. 
+• Revenue and receivables reconcile. 
+• Inventory and COGS reconcile. 
+• PPE cost and accumulated depreciation reconcile. 
+• Debt principal, interest expense, interest paid and interest payable reconcile. 
+• Opening equity plus profit minus distributions equals closing equity. 
+Before you submit 
+• Open the published Vercel website in a private browser window. 
+• Check that the main page works. 
+• Add /review to the URL and check that the reviewer page opens. 
+• Add /submission.json to the URL and check that structured data appears. 
+• Confirm that all 100 decisions are present. 
+• Keep the GitHub repository available to the instructor. 
+What you submit 
+Submit one public Vercel URL in the class submission spreadsheet. Do not request access from the instructor. Do 
+not edit, delete or replace another student’s link. 
+What good work looks like 
+A good result is not a beautiful guess. It is a traceable reconstruction: every material number links to evidence, 
+uncertainty is visible, all statements reconcile, and another analyst can reproduce your conclusion. 

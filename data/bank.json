@@ -1,0 +1,245 @@
+[
+  {
+    "date": "2026-01-01",
+    "reference": "OPEN",
+    "description": "Opening balance",
+    "debit": 0,
+    "credit": 80000,
+    "balance": 80000,
+    "csvRow": 2
+  },
+  {
+    "date": "2026-01-10",
+    "reference": "RCPT-001",
+    "description": "Old customer AR settlement",
+    "debit": 0,
+    "credit": 35000,
+    "balance": 115000,
+    "csvRow": 3
+  },
+  {
+    "date": "2026-02-12",
+    "reference": "RCPT-NS",
+    "description": "N STAR EVENTS",
+    "debit": 0,
+    "credit": 180000,
+    "balance": 295000,
+    "csvRow": 4
+  },
+  {
+    "date": "2026-03-01",
+    "reference": "LOAN-ADV",
+    "description": "BALTIC BANK FACILITY",
+    "debit": 0,
+    "credit": 50000,
+    "balance": 345000,
+    "csvRow": 5
+  },
+  {
+    "date": "2026-03-18",
+    "reference": "RCPT-FF",
+    "description": "FREEDOM FEST 1/2",
+    "debit": 0,
+    "credit": 142000,
+    "balance": 487000,
+    "csvRow": 6
+  },
+  {
+    "date": "2026-04-29",
+    "reference": "RCPT-PHX",
+    "description": "PHOENIX PEOPLE TEAM",
+    "debit": 0,
+    "credit": 70000,
+    "balance": 557000,
+    "csvRow": 7
+  },
+  {
+    "date": "2026-06-20",
+    "reference": "RCPT-LIB",
+    "description": "LIBERTY HOTELS",
+    "debit": 0,
+    "credit": 95000,
+    "balance": 652000,
+    "csvRow": 8
+  },
+  {
+    "date": "2026-08-01",
+    "reference": "PLAT-FSB",
+    "description": "STRIPE SETTLEMENT FINALLY SINGLE",
+    "debit": 0,
+    "credit": 250000,
+    "balance": 902000,
+    "csvRow": 9
+  },
+  {
+    "date": "2026-08-15",
+    "reference": "PLAT-NCB",
+    "description": "STRIPE SETTLEMENT NEVER CALL BACK",
+    "debit": 0,
+    "credit": 37000,
+    "balance": 939000,
+    "csvRow": 10
+  },
+  {
+    "date": "2026-08-28",
+    "reference": "DEP-NB",
+    "description": "NEW BEGINNINGS SEPT",
+    "debit": 0,
+    "credit": 60000,
+    "balance": 999000,
+    "csvRow": 11
+  },
+  {
+    "date": "2026-08-29",
+    "reference": "DEP-FF2",
+    "description": "FRESH FREEDOM SEPT",
+    "debit": 0,
+    "credit": 30000,
+    "balance": 1029000,
+    "csvRow": 12
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "SUP-BOX",
+    "description": "Box supplier batch payments",
+    "debit": 105000,
+    "credit": 0,
+    "balance": 924000,
+    "csvRow": 13
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "SUP-GLS",
+    "description": "Glass supplier batch payments",
+    "debit": 92000,
+    "credit": 0,
+    "balance": 832000,
+    "csvRow": 14
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "SUP-PRT",
+    "description": "Print supplier batch payments",
+    "debit": 81000,
+    "credit": 0,
+    "balance": 751000,
+    "csvRow": 15
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "SUP-EVT",
+    "description": "Event supplier batch payments",
+    "debit": 100000,
+    "credit": 0,
+    "balance": 651000,
+    "csvRow": 16
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "PAYROLL",
+    "description": "Payroll Jan-Aug combined",
+    "debit": 231000,
+    "credit": 0,
+    "balance": 420000,
+    "csvRow": 17
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "RENT",
+    "description": "Rent Jan-Aug",
+    "debit": 48000,
+    "credit": 0,
+    "balance": 372000,
+    "csvRow": 18
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "MKT",
+    "description": "Meta, TikTok and influencers",
+    "debit": 55000,
+    "credit": 0,
+    "balance": 317000,
+    "csvRow": 19
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "SOFT",
+    "description": "Software subscriptions",
+    "debit": 16000,
+    "credit": 0,
+    "balance": 301000,
+    "csvRow": 20
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "UTIL",
+    "description": "Utilities",
+    "debit": 12000,
+    "credit": 0,
+    "balance": 289000,
+    "csvRow": 21
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "REPAIR",
+    "description": "Emergency machine work",
+    "debit": 10000,
+    "credit": 0,
+    "balance": 279000,
+    "csvRow": 22
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "CAPEX-PACK",
+    "description": "PACK-O-MATIC 9000",
+    "debit": 60000,
+    "credit": 0,
+    "balance": 219000,
+    "csvRow": 23
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "CAPEX-PHOTO",
+    "description": "Regret Photo Booth",
+    "debit": 20000,
+    "credit": 0,
+    "balance": 199000,
+    "csvRow": 24
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "INT",
+    "description": "Interest paid",
+    "debit": 10000,
+    "credit": 0,
+    "balance": 189000,
+    "csvRow": 25
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "PRINCIPAL",
+    "description": "Loan principal",
+    "debit": 19000,
+    "credit": 0,
+    "balance": 170000,
+    "csvRow": 26
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "VILLA",
+    "description": "SUNSET VILLA RESERVATION",
+    "debit": 70000,
+    "credit": 0,
+    "balance": 100000,
+    "csvRow": 27
+  },
+  {
+    "date": "2026-08-31",
+    "reference": "OWNERCARD",
+    "description": "Chairman's platinum card",
+    "debit": 40000,
+    "credit": 0,
+    "balance": 60000,
+    "csvRow": 28
+  }
+]

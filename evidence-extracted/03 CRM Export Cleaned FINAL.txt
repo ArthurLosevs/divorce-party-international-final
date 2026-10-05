@@ -1,0 +1,11 @@
+SHEET CRM Export
+A1: CRM Export Cleaned FINAL
+A3: CRM ID | B3: Customer | C3: Invoice | D3: Product | E3: Invoice EUR | F3: Cash matched | G3: Delivery / completion | H3: CRM status | I3: Comment
+A4: C-001 | B4: North Star / N STAR | C4: INV-26012 | D4: Finally Single Boxes | E4: 180000 | F4: 180000 | G4: 2026-02-12 | H4: Won | I4: Accepted
+A5: C-002 | B5: Freedom Festivals | C5: INV-26031 | D5: Never Call Back Boxes | E5: 200000 | F5: 142000 | G5: 2026-03-18 | H5: Won | I5: €58k open
+A6: C-003 | B6: Phoenix People | C6: INV-26047 | D6: Divorce Victory Party | E6: 100000 | F6: 70000 | G6: 2026-04-29 | H6: Won | I6: €30k open
+A7: C-004 | B7: Liberty Hotels | C7: INV-26063 | D7: Mixed boxes | E7: 120000 | F7: 95000 | G7: 2026-06-20 | H7: Won | I7: €25k open
+A8: WEB-FSB | B8: Various web buyers | C8: WEB-FSB | D8: Finally Single Boxes | E8: 270000 | F8: 250000 | G8: Jan–Aug | H8: Won | I8: €20k platform receivable
+A9: WEB-NCB | B9: Various web buyers | C9: WEB-NCB | D9: Never Call Back Boxes | E9: 90000 | F9: 37000 | G9: Jan–Aug | H9: Won | I9: €53k gross open; see R-17
+A10: FUT-01 | B10: New Beginnings USA | C10: NB-SEP | D10: September event | E10: 60000 | F10: 60000 | G10: 2026-09-15 | H10: Won | I10: Management included in August
+A11: FUT-02 | B11: Fresh Freedom UK | C11: FF-SEP | D11: September event | E11: 30000 | F11: 30000 | G11: 2026-09-24 | H11: Won | I11: Management included in August

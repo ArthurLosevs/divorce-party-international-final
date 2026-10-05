@@ -1,0 +1,202 @@
+[
+  {
+    "sheet": "Payroll",
+    "state": "visible",
+    "rows": [
+      [
+        {
+          "cell": "A1",
+          "value": "Payroll Bonuses Contractors NEW",
+          "cached": "Payroll Bonuses Contractors NEW",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A3",
+          "value": "Department / label",
+          "cached": "Department / label",
+          "comment": ""
+        },
+        {
+          "cell": "B3",
+          "value": "Expense EUR",
+          "cached": "Expense EUR",
+          "comment": ""
+        },
+        {
+          "cell": "C3",
+          "value": "Cash paid EUR",
+          "cached": "Cash paid EUR",
+          "comment": ""
+        },
+        {
+          "cell": "D3",
+          "value": "Management treatment",
+          "cached": "Management treatment",
+          "comment": ""
+        },
+        {
+          "cell": "E3",
+          "value": "Notes",
+          "cached": "Notes",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A4",
+          "value": "Event delivery staff",
+          "cached": "Event delivery staff",
+          "comment": ""
+        },
+        {
+          "cell": "B4",
+          "value": 80000,
+          "cached": 80000,
+          "comment": ""
+        },
+        {
+          "cell": "C4",
+          "value": 75000,
+          "cached": 75000,
+          "comment": ""
+        },
+        {
+          "cell": "D4",
+          "value": "Admin",
+          "cached": "Admin",
+          "comment": ""
+        },
+        {
+          "cell": "E4",
+          "value": "Works directly on paid events",
+          "cached": "Works directly on paid events",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A5",
+          "value": "Sales and partnerships",
+          "cached": "Sales and partnerships",
+          "comment": ""
+        },
+        {
+          "cell": "B5",
+          "value": 72000,
+          "cached": 72000,
+          "comment": ""
+        },
+        {
+          "cell": "C5",
+          "value": 68000,
+          "cached": 68000,
+          "comment": ""
+        },
+        {
+          "cell": "D5",
+          "value": "COGS",
+          "cached": "COGS",
+          "comment": ""
+        },
+        {
+          "cell": "E5",
+          "value": "Commercial team",
+          "cached": "Commercial team",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A6",
+          "value": "Office and finance",
+          "cached": "Office and finance",
+          "comment": ""
+        },
+        {
+          "cell": "B6",
+          "value": 96000,
+          "cached": 96000,
+          "comment": ""
+        },
+        {
+          "cell": "C6",
+          "value": 88000,
+          "cached": 88000,
+          "comment": ""
+        },
+        {
+          "cell": "D6",
+          "value": "Admin",
+          "cached": "Admin",
+          "comment": ""
+        },
+        {
+          "cell": "E6",
+          "value": "Includes former finance manager",
+          "cached": "Includes former finance manager",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A7",
+          "value": "TOTAL",
+          "cached": "TOTAL",
+          "comment": ""
+        },
+        {
+          "cell": "B7",
+          "value": 248000,
+          "cached": 248000,
+          "comment": ""
+        },
+        {
+          "cell": "C7",
+          "value": 231000,
+          "cached": 231000,
+          "comment": ""
+        },
+        {
+          "cell": "E7",
+          "value": "Opening unpaid payroll €15k; closing amount not calculated",
+          "cached": "Opening unpaid payroll €15k; closing amount not calculated",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A8",
+          "value": "Founder ‘bonus’",
+          "cached": "Founder ‘bonus’",
+          "comment": ""
+        },
+        {
+          "cell": "B8",
+          "value": 110000,
+          "cached": 110000,
+          "comment": ""
+        },
+        {
+          "cell": "C8",
+          "value": 110000,
+          "cached": 110000,
+          "comment": ""
+        },
+        {
+          "cell": "D8",
+          "value": "Payroll",
+          "cached": "Payroll",
+          "comment": ""
+        },
+        {
+          "cell": "E8",
+          "value": "No employment approval; see owner card",
+          "cached": "No employment approval; see owner card",
+          "comment": ""
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "sheet": "CRM Export",
+    "state": "visible",
+    "rows": [
+      [
+        {
+          "cell": "A1",
+          "value": "CRM Export Cleaned FINAL",
+          "cached": "CRM Export Cleaned FINAL",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A3",
+          "value": "CRM ID",
+          "cached": "CRM ID",
+          "comment": ""
+        },
+        {
+          "cell": "B3",
+          "value": "Customer",
+          "cached": "Customer",
+          "comment": ""
+        },
+        {
+          "cell": "C3",
+          "value": "Invoice",
+          "cached": "Invoice",
+          "comment": ""
+        },
+        {
+          "cell": "D3",
+          "value": "Product",
+          "cached": "Product",
+          "comment": ""
+        },
+        {
+          "cell": "E3",
+          "value": "Invoice EUR",
+          "cached": "Invoice EUR",
+          "comment": ""
+        },
+        {
+          "cell": "F3",
+          "value": "Cash matched",
+          "cached": "Cash matched",
+          "comment": ""
+        },
+        {
+          "cell": "G3",
+          "value": "Delivery / completion",
+          "cached": "Delivery / completion",
+          "comment": ""
+        },
+        {
+          "cell": "H3",
+          "value": "CRM status",
+          "cached": "CRM status",
+          "comment": ""
+        },
+        {
+          "cell": "I3",
+          "value": "Comment",
+          "cached": "Comment",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A4",
+          "value": "C-001",
+          "cached": "C-001",
+          "comment": ""
+        },
+        {
+          "cell": "B4",
+          "value": "North Star / N STAR",
+          "cached": "North Star / N STAR",
+          "comment": ""
+        },
+        {
+          "cell": "C4",
+          "value": "INV-26012",
+          "cached": "INV-26012",
+          "comment": ""
+        },
+        {
+          "cell": "D4",
+          "value": "Finally Single Boxes",
+          "cached": "Finally Single Boxes",
+          "comment": ""
+        },
+        {
+          "cell": "E4",
+          "value": 180000,
+          "cached": 180000,
+          "comment": ""
+        },
+        {
+          "cell": "F4",
+          "value": 180000,
+          "cached": 180000,
+          "comment": ""
+        },
+        {
+          "cell": "G4",
+          "value": "2026-02-12",
+          "cached": "2026-02-12",
+          "comment": ""
+        },
+        {
+          "cell": "H4",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I4",
+          "value": "Accepted",
+          "cached": "Accepted",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A5",
+          "value": "C-002",
+          "cached": "C-002",
+          "comment": ""
+        },
+        {
+          "cell": "B5",
+          "value": "Freedom Festivals",
+          "cached": "Freedom Festivals",
+          "comment": ""
+        },
+        {
+          "cell": "C5",
+          "value": "INV-26031",
+          "cached": "INV-26031",
+          "comment": ""
+        },
+        {
+          "cell": "D5",
+          "value": "Never Call Back Boxes",
+          "cached": "Never Call Back Boxes",
+          "comment": ""
+        },
+        {
+          "cell": "E5",
+          "value": 200000,
+          "cached": 200000,
+          "comment": ""
+        },
+        {
+          "cell": "F5",
+          "value": 142000,
+          "cached": 142000,
+          "comment": ""
+        },
+        {
+          "cell": "G5",
+          "value": "2026-03-18",
+          "cached": "2026-03-18",
+          "comment": ""
+        },
+        {
+          "cell": "H5",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I5",
+          "value": "€58k open",
+          "cached": "€58k open",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A6",
+          "value": "C-003",
+          "cached": "C-003",
+          "comment": ""
+        },
+        {
+          "cell": "B6",
+          "value": "Phoenix People",
+          "cached": "Phoenix People",
+          "comment": ""
+        },
+        {
+          "cell": "C6",
+          "value": "INV-26047",
+          "cached": "INV-26047",
+          "comment": ""
+        },
+        {
+          "cell": "D6",
+          "value": "Divorce Victory Party",
+          "cached": "Divorce Victory Party",
+          "comment": ""
+        },
+        {
+          "cell": "E6",
+          "value": 100000,
+          "cached": 100000,
+          "comment": ""
+        },
+        {
+          "cell": "F6",
+          "value": 70000,
+          "cached": 70000,
+          "comment": ""
+        },
+        {
+          "cell": "G6",
+          "value": "2026-04-29",
+          "cached": "2026-04-29",
+          "comment": ""
+        },
+        {
+          "cell": "H6",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I6",
+          "value": "€30k open",
+          "cached": "€30k open",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A7",
+          "value": "C-004",
+          "cached": "C-004",
+          "comment": ""
+        },
+        {
+          "cell": "B7",
+          "value": "Liberty Hotels",
+          "cached": "Liberty Hotels",
+          "comment": ""
+        },
+        {
+          "cell": "C7",
+          "value": "INV-26063",
+          "cached": "INV-26063",
+          "comment": ""
+        },
+        {
+          "cell": "D7",
+          "value": "Mixed boxes",
+          "cached": "Mixed boxes",
+          "comment": ""
+        },
+        {
+          "cell": "E7",
+          "value": 120000,
+          "cached": 120000,
+          "comment": ""
+        },
+        {
+          "cell": "F7",
+          "value": 95000,
+          "cached": 95000,
+          "comment": ""
+        },
+        {
+          "cell": "G7",
+          "value": "2026-06-20",
+          "cached": "2026-06-20",
+          "comment": ""
+        },
+        {
+          "cell": "H7",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I7",
+          "value": "€25k open",
+          "cached": "€25k open",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A8",
+          "value": "WEB-FSB",
+          "cached": "WEB-FSB",
+          "comment": ""
+        },
+        {
+          "cell": "B8",
+          "value": "Various web buyers",
+          "cached": "Various web buyers",
+          "comment": ""
+        },
+        {
+          "cell": "C8",
+          "value": "WEB-FSB",
+          "cached": "WEB-FSB",
+          "comment": ""
+        },
+        {
+          "cell": "D8",
+          "value": "Finally Single Boxes",
+          "cached": "Finally Single Boxes",
+          "comment": ""
+        },
+        {
+          "cell": "E8",
+          "value": 270000,
+          "cached": 270000,
+          "comment": ""
+        },
+        {
+          "cell": "F8",
+          "value": 250000,
+          "cached": 250000,
+          "comment": ""
+        },
+        {
+          "cell": "G8",
+          "value": "Jan–Aug",
+          "cached": "Jan–Aug",
+          "comment": ""
+        },
+        {
+          "cell": "H8",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I8",
+          "value": "€20k platform receivable",
+          "cached": "€20k platform receivable",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A9",
+          "value": "WEB-NCB",
+          "cached": "WEB-NCB",
+          "comment": ""
+        },
+        {
+          "cell": "B9",
+          "value": "Various web buyers",
+          "cached": "Various web buyers",
+          "comment": ""
+        },
+        {
+          "cell": "C9",
+          "value": "WEB-NCB",
+          "cached": "WEB-NCB",
+          "comment": ""
+        },
+        {
+          "cell": "D9",
+          "value": "Never Call Back Boxes",
+          "cached": "Never Call Back Boxes",
+          "comment": ""
+        },
+        {
+          "cell": "E9",
+          "value": 90000,
+          "cached": 90000,
+          "comment": ""
+        },
+        {
+          "cell": "F9",
+          "value": 37000,
+          "cached": 37000,
+          "comment": ""
+        },
+        {
+          "cell": "G9",
+          "value": "Jan–Aug",
+          "cached": "Jan–Aug",
+          "comment": ""
+        },
+        {
+          "cell": "H9",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I9",
+          "value": "€53k gross open; see R-17",
+          "cached": "€53k gross open; see R-17",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A10",
+          "value": "FUT-01",
+          "cached": "FUT-01",
+          "comment": ""
+        },
+        {
+          "cell": "B10",
+          "value": "New Beginnings USA",
+          "cached": "New Beginnings USA",
+          "comment": ""
+        },
+        {
+          "cell": "C10",
+          "value": "NB-SEP",
+          "cached": "NB-SEP",
+          "comment": ""
+        },
+        {
+          "cell": "D10",
+          "value": "September event",
+          "cached": "September event",
+          "comment": ""
+        },
+        {
+          "cell": "E10",
+          "value": 60000,
+          "cached": 60000,
+          "comment": ""
+        },
+        {
+          "cell": "F10",
+          "value": 60000,
+          "cached": 60000,
+          "comment": ""
+        },
+        {
+          "cell": "G10",
+          "value": "2026-09-15",
+          "cached": "2026-09-15",
+          "comment": ""
+        },
+        {
+          "cell": "H10",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I10",
+          "value": "Management included in August",
+          "cached": "Management included in August",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A11",
+          "value": "FUT-02",
+          "cached": "FUT-02",
+          "comment": ""
+        },
+        {
+          "cell": "B11",
+          "value": "Fresh Freedom UK",
+          "cached": "Fresh Freedom UK",
+          "comment": ""
+        },
+        {
+          "cell": "C11",
+          "value": "FF-SEP",
+          "cached": "FF-SEP",
+          "comment": ""
+        },
+        {
+          "cell": "D11",
+          "value": "September event",
+          "cached": "September event",
+          "comment": ""
+        },
+        {
+          "cell": "E11",
+          "value": 30000,
+          "cached": 30000,
+          "comment": ""
+        },
+        {
+          "cell": "F11",
+          "value": 30000,
+          "cached": 30000,
+          "comment": ""
+        },
+        {
+          "cell": "G11",
+          "value": "2026-09-24",
+          "cached": "2026-09-24",
+          "comment": ""
+        },
+        {
+          "cell": "H11",
+          "value": "Won",
+          "cached": "Won",
+          "comment": ""
+        },
+        {
+          "cell": "I11",
+          "value": "Management included in August",
+          "cached": "Management included in August",
+          "comment": ""
+        }
+      ]
+    ]
+  }
+]

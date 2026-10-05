@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "modelVersion": "DPI-HT-01-evidence-baseline-v3",
+  "student": {
+    "name": "Artūrs Losevs",
+    "id": "al25174"
+  },
+  "answers": {
+    "D041": {
+      "state": "accepted",
+      "answer": "Exclude €90,000 September customer advances from August revenue. Recognise a liability until delivery, while retaining the cash receipt.",
+      "reason": "NB-SEP €60k and FF-SEP €30k relate to 15 and 24 September deliveries; nothing was delivered by 31 Aug. 04 Contracts Returns and Angry … Bank confirms both receipts on 28–29 Aug. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D042": {
+      "state": "accepted",
+      "answer": "€50,000 bank advance is financing, not income. Increase loan principal; recognise no profit from borrowing.",
+      "reason": "Agreement calls it a loan and requires repayment. 09 Loans Owner Card and Legal P… Bank shows €50k facility receipt 1 Mar. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D043": {
+      "state": "accepted",
+      "answer": "Capitalise packaging machine A-910 at €60,000; available for use 10 May. The €60,000 payment is investing cash flow. Depreciation is included separately in the adopted period charge.",
+      "reason": "Pack-O-Matic invoice A-910: €60k, installed 10 May. 06 Purchases Invoices and Goods… Bank CAPEX-PACK €60k. 02 Bank Export August(1) Assets!A5:E5 confirms available for use.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D044": {
+      "state": "accepted",
+      "answer": "Capitalise photo booth P-404 at €20,000; available for use 10 May. The €20,000 payment is investing cash flow. Depreciation is included separately.",
+      "reason": "Invoice P-404: €20k, available for use 10 May. 06 Purchases Invoices and Goods… Bank CAPEX-PHOTO €20k. 02 Bank Export August(1) Assets!A6:E6.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D045": {
+      "state": "accepted",
+      "answer": "Expense the €10,000 R-771 restoration. It restores normal performance and does not establish an improvement; exclude it from PPE additions.",
+      "reason": "Work only restored normal output; did not increase capacity or useful life. 06 Purchases Invoices and Goods… Bank REPAIR €10k. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D046": {
+      "state": "accepted",
+      "answer": "Treat €70,000 villa spending as an owner distribution, excluding it from business expenses and employee payroll. Retain the 2024 booking-photo / 2026 bank-date conflict; recovery is unproven.",
+      "reason": "Villa is in founder's personal name and no customer meeting occurred. 09 Loans Owner Card and Legal P… Bank shows €70k villa payment. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D047": {
+      "state": "accepted",
+      "answer": "Treat €40,000 owner-card spending as an owner distribution, not normal operating expense or additional payroll. Any enforceable recovery requires separate evidence.",
+      "reason": "Owner card/bank evidence identifies €40k. 09 Loans Owner Card and Legal P… Bank confirms €40k owner's card payment. 02 Bank Export August(1) Together with villa it matches the unsupported €110k “founder bonus” in Payroll!A8:E8.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D048": {
+      "state": "accepted",
+      "answer": "Retain recorded materials consumed €405,000 and primary closing inventory €112,000. Physical usable stock €121,000 conflicts by €9,000. The count-based alternative uses €396,000 consumption and €74,000 profit only if additional reconciliation evidence substantiates the difference. No unexplained balancing entry is recognised.",
+      "reason": "Warehouse evidence explicitly states materials consumed on valid delivered sales = €405k. 05 Warehouse Count Marta Notes",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D049": {
+      "state": "accepted",
+      "answer": "€80,000 event/service payroll belongs in cost of sales because it supports delivery of services. Total employee payroll is €248,000; this is a functional reclassification only.",
+      "reason": "Payroll!A4:E4: €80k expense, staff work directly on paid events.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D056": {
+      "state": "accepted",
+      "answer": "Use €24,000 period depreciation, as adopted by both independent analyses. The original invoices available here corroborate additions only. The asset workbook cited by both agents, 08 Assets Repairs Leases Maybe.xlsx, is missing from this project, so the estimate is not independently verified here.",
+      "reason": "Assets!A8:E8 states independent schedule estimates €24k. Assets were available for use from 10 May.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D057": {
+      "state": "accepted",
+      "answer": "Recognise one €18,000 R-17 receivable impairment. Subsequent liquidation evidence confirms conditions existing on 31 August. Retain the valid sale and avoid an additional revenue reversal.",
+      "reason": "Customer entered liquidation and no recovery expected; event confirms condition existing at 31 Aug. 04 Contracts Returns and Angry … External post-takeover evidence says no distribution expected. 11 Evidence Received After Take…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D058": {
+      "state": "accepted",
+      "answer": "Write off the €22,000 unsaleable stock once in cost of sales. Physical presence does not support recoverable value. Keep the separate €2,000 disposal quote outside provisions unless an obligation is established.",
+      "reason": "€22k stock physically exists but is wet and unsaleable. 05 Warehouse Count Marta Notes Independent assessment says no saleable value. 11 Evidence Received After Take…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D059": {
+      "state": "accepted",
+      "answer": "Recognise one €25,000 legal provision for the probable claim at counsel’s best estimate. The €20,000–€30,000 range is uncertainty, not three separate liabilities.",
+      "reason": "External counsel at reporting date: claim probable, best estimate €25k, range €20–30k. 09 Loans Owner Card and Legal P… Independently reconfirmed after takeover. 11 Evidence Received After Take…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D064": {
+      "state": "accepted",
+      "answer": "Recognise €180,000 for NorthStar Events: delivery/acceptance occurred by 31 August. Cash collection is accounted for separately.",
+      "reason": "Signed/accepted 12 Feb. 04 Contracts Returns and Angry … CRM Export!A4:I4; bank receipt €180k. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D065": {
+      "state": "accepted",
+      "answer": "Recognise €200,000 for Freedom Festivals: delivery/acceptance occurred by 31 August. Cash collection is accounted for separately.",
+      "reason": "Accepted 18 Mar; only €142k collected. 04 Contracts Returns and Angry … Bank confirms €142k. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D066": {
+      "state": "accepted",
+      "answer": "Recognise €100,000 for Phoenix HR: delivery/acceptance occurred by 31 August. Cash collection is accounted for separately.",
+      "reason": "Event completed 29 Apr and final customer acceptance exists. 04 Contracts Returns and Angry … CRM Export!A6:I6; bank €70k. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D067": {
+      "state": "accepted",
+      "answer": "Recognise €120,000 for Liberty Hotels: delivery/acceptance occurred by 31 August. Cash collection is accounted for separately.",
+      "reason": "Delivered 20 Jun; customer explicitly accepted in full. 04 Contracts Returns and Angry … Bank €95k. 02 Bank Export August(1)",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D068": {
+      "state": "accepted",
+      "answer": "Exclude €90,000 September customer advances from August revenue. Recognise a liability until delivery, while retaining the cash receipt.",
+      "reason": "Both scheduled after reporting date with no delivery by 31 Aug. 04 Contracts Returns and Angry …",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D071": {
+      "state": "accepted",
+      "answer": "Recognise one €18,000 R-17 receivable impairment. Subsequent liquidation evidence confirms conditions existing on 31 August. Retain the valid sale and avoid an additional revenue reversal.",
+      "reason": "No distribution expected from liquidation. 11 Evidence Received After Take…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D072": {
+      "state": "accepted",
+      "answer": "Write off the €22,000 unsaleable stock once in cost of sales. Physical presence does not support recoverable value. Keep the separate €2,000 disposal quote outside provisions unless an obligation is established.",
+      "reason": "Carrying value €22k and no saleable value. 11 Evidence Received After Take… Warehouse also confirms physical damage. 05 Warehouse Count Marta Notes",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D073": {
+      "state": "accepted",
+      "answer": "Recognise one €25,000 legal provision for the probable claim at counsel’s best estimate. The €20,000–€30,000 range is uncertainty, not three separate liabilities.",
+      "reason": "Probable; best estimate €25k; reasonable range €20–30k. 11 Evidence Received After Take…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D074": {
+      "state": "accepted",
+      "answer": "Use €24,000 period depreciation, as adopted by both independent analyses. The original invoices available here corroborate additions only. The asset workbook cited by both agents, 08 Assets Repairs Leases Maybe.xlsx, is missing from this project, so the estimate is not independently verified here.",
+      "reason": "Assets!A8:E8 gives the only quantified independent estimate.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D075": {
+      "state": "accepted",
+      "answer": "Retain recorded materials consumed €405,000 and primary closing inventory €112,000. Physical usable stock €121,000 conflicts by €9,000. The count-based alternative uses €396,000 consumption and €74,000 profit only if additional reconciliation evidence substantiates the difference. No unexplained balancing entry is recognised.",
+      "reason": "Roll-forward: €80k opening + €459k purchases − €405k materials consumed − €22k damage = €112k. Opening/purchases/consumption are stated in warehouse evidence. 05 Warehouse Count Marta Notes Purchases are corroborated by goods-received supplier invoices. 06 Purchases Invoices and Goods… However physical count shows €121k good stock plus €22k damaged = €143k. 05 Warehouse Count Marta Notes",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D091": {
+      "state": "accepted",
+      "answer": "Adopt the reconstruction for provisional board review with all qualifications visible. Student certification records personal approval of the material judgments; it does not certify the accounts or source completeness.",
+      "reason": "Assignment requires reconciled statements and evidence-based reconstruction. 01 START HERE - Student Assignm… Management file itself says P&L is “not reconciled”; bank/external evidence contradicts several management classifications.",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    },
+    "D100": {
+      "state": "accepted",
+      "answer": "Reject management’s €312,000 as a valuation or earn-out basis. The primary reconstruction produces €65,000 provisional profit. Defer binding valuation and earn-out settlement until the contract, opening records and evidence gaps are resolved.",
+      "reason": "Management's file claims €312k, but includes €90k premature sales and €50k loan income and omits/corrupts several expenses. Management messages explicitly pressured classification. 10 Email and WhatsApp Dump DO N…",
+      "choice": "recommended",
+      "reviewedAt": "2026-10-05T17:09:35.796Z"
+    }
+  },
+  "operationalAttestation": false,
+  "acknowledged": true,
+  "certifiedAt": "2026-10-05T17:09:35.796Z",
+  "status": "COMPLETE"
+}

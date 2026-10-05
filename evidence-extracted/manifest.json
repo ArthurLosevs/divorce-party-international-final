@@ -1,0 +1,93 @@
+[
+  {
+    "file": "00 BOARD ORDER READ FIRST.pdf",
+    "sha256": "45385535b5c9dbde6dcd0609c01febcebfdebd69ab03ce940076b8e4c8c12856",
+    "bytes": 3074,
+    "pages": 1
+  },
+  {
+    "file": "01 START HERE - Student Assignment (1).pdf",
+    "sha256": "288c73ad378caf6219a98eb0f205d9c0c469fd7eccde4d2b827b1e1f484fb9e3",
+    "bytes": 160825,
+    "pages": 3
+  },
+  {
+    "file": "01 START HERE - Student Assignment.pdf",
+    "sha256": "288c73ad378caf6219a98eb0f205d9c0c469fd7eccde4d2b827b1e1f484fb9e3",
+    "bytes": 160825,
+    "pages": 3
+  },
+  {
+    "file": "01 USE THIS NUMBERS FINAL v9.xlsx",
+    "sha256": "10377e1794b644b470100fc41df248401f759b0ea166be0a2e2cff4f22eed12a",
+    "bytes": 5104,
+    "sheets": [
+      "READ ME",
+      "Management P&L"
+    ]
+  },
+  {
+    "file": "02 Bank Export August.csv",
+    "sha256": "b7131bab6c1464f0a2a6c7c066ef756d3c42b05fbc0ed65ccf4e7a4edcf83282",
+    "bytes": 1578,
+    "rows": 27
+  },
+  {
+    "file": "02 FINANCE REFERENCE - Use When You Get Stuck.pdf",
+    "sha256": "17cbc51dfcf27f1a60586d1179bd706f2dedb4a4d36ffa2b8df2213c3470bee5",
+    "bytes": 122679,
+    "pages": 2
+  },
+  {
+    "file": "03 CRM Export Cleaned FINAL.xlsx",
+    "sha256": "3580daf49bbc5f12b380e58c9771e540cb1179855a5d24faf7f7f989130a03c5",
+    "bytes": 4696,
+    "sheets": [
+      "CRM Export"
+    ]
+  },
+  {
+    "file": "04 Contracts Returns and Angry Customers.pdf",
+    "sha256": "813dbec1469e5d985d3a34ab6d80cd7948d8c443034d089e0ee6c45cbe305323",
+    "bytes": 4273,
+    "pages": 2
+  },
+  {
+    "file": "05 Warehouse Count Marta Notes.pdf",
+    "sha256": "ee802c3919d58e88f079fd7a5789f33b38357b99ec872ad70d312279aa6c3bbd",
+    "bytes": 4411329,
+    "pages": 2
+  },
+  {
+    "file": "06 Purchases Invoices and Goods Received.pdf",
+    "sha256": "4dd01296acec891d19e57b50234ab9d01a7dc89d8982ece78cdf981db4345216",
+    "bytes": 4336301,
+    "pages": 2
+  },
+  {
+    "file": "07 Payroll Bonuses Contractors NEW.xlsx",
+    "sha256": "9aa6c9dc016d704db23ba4713e3b471b786e6fb6fc539f0bbe85692a3176be32",
+    "bytes": 4355,
+    "sheets": [
+      "Payroll"
+    ]
+  },
+  {
+    "file": "09 Loans Owner Card and Legal Problems.pdf",
+    "sha256": "5fa12e9de708817406cccf0a060e27062d9754f9cbbfa1a5cb3b456f7c26db62",
+    "bytes": 3659636,
+    "pages": 2
+  },
+  {
+    "file": "10 Email and WhatsApp Dump DO NOT FORWARD.pdf",
+    "sha256": "0e83520e6843cce3ef7d0c9d216cd3423b21da07cc3610da6775b16cbfb7cc33",
+    "bytes": 4306,
+    "pages": 3
+  },
+  {
+    "file": "11 Evidence Received After Takeover.pdf",
+    "sha256": "9af00c3fa4a11792da7c123a18b516039938cc9e8e8d88d4a62aec5a263b7627",
+    "bytes": 2294,
+    "pages": 1
+  }
+]

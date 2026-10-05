@@ -1,0 +1,45 @@
+PAGE 1
+Finance Reference for the Hostile Takeover Case  
+Open 01 START HERE first  Use this document when a finance concept blocks you 
+This is not a second assignment and it is not the first file to read. Inspect the case evidence first. Return here 
+when you need to understand how a transaction affects profit, cash, assets, liabilities or equity. 
+1 The accounting equation 
+Assets equal liabilities plus equity. Every correction must preserve this equation. A balanced statement can still 
+contain wrong classifications, but an unbalanced statement is definitely incomplete or wrong. 
+2 Profit is not cash 
+Revenue and expense follow economic activity. Cash flow follows money. A customer deposit can increase cash 
+without increasing revenue. A loan increases cash and debt, not profit. 
+3 Revenue and receivables 
+Recognize revenue when the promised goods or service are delivered. Closing receivables equal opening 
+receivables plus credit revenue minus collections and write-offs. Deposits for future work are liabilities. 
+4 Inventory and cost of goods sold 
+Closing inventory equals opening inventory plus purchases minus COGS and write-offs. Physical existence does 
+not guarantee financial value. Unsaleable damaged goods require a write-down. 
+5 Payroll and accruals 
+Payroll expense belongs to the period in which employees worked. Cash paid may differ. Closing payroll liability 
+equals opening liability plus expense minus cash paid. 
+6 Fixed assets repairs and depreciation 
+Capitalize spending that creates or improves a long-term resource. Expense work that merely restores normal 
+operation. Depreciation allocates asset cost over useful life and is non-cash in the current period. 
+7 Loans interest and owner money 
+Borrowing and principal repayment are financing activities. Interest is an expense. Personal owner spending is 
+a distribution unless genuine business purpose and evidence support another treatment. 
+  
+
+PAGE 2
+8 Provisions and later evidence 
+Recognize a provision when an obligation from a past event is probable and can be estimated. Evidence received 
+after period end can confirm a condition that already existed at the reporting date. 
+9 Reconstructing the three statements 
+Build the supporting schedules first. Use them to produce the P&L, then connect cash flow and the balance 
+sheet. Link values rather than typing the same number repeatedly. Reconcile cash, working capital, debt, PPE 
+and equity. 
+10 Evidence discipline 
+Prefer bank and signed third-party evidence over unsupported management claims. Preserve competing 
+interpretations, quantify their effect, state confidence and make the final judgment yourself. 
+Minimum board output 
+• Corrected profit and cash position. 
+• Working-capital and solvency warning. 
+• Five immediate control actions. 
+• Key uncertainty ranges. 
+• A decision on whether the core business should continue. 

@@ -1,0 +1,266 @@
+[
+  {
+    "sheet": "READ ME",
+    "state": "visible",
+    "rows": [
+      [
+        {
+          "cell": "A1",
+          "value": "USE THIS NUMBERS FINAL v9 (management file)",
+          "cached": "USE THIS NUMBERS FINAL v9 (management file)",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A3",
+          "value": "Note",
+          "cached": "Note",
+          "comment": ""
+        },
+        {
+          "cell": "B3",
+          "value": "Value",
+          "cached": "Value",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A4",
+          "value": "Prepared by",
+          "cached": "Prepared by",
+          "comment": ""
+        },
+        {
+          "cell": "B4",
+          "value": "Former finance manager",
+          "cached": "Former finance manager",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A5",
+          "value": "Claim",
+          "cached": "Claim",
+          "comment": ""
+        },
+        {
+          "cell": "B5",
+          "value": "Profit is excellent; please avoid negative adjustments",
+          "cached": "Profit is excellent; please avoid negative adjustments",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A6",
+          "value": "Warning",
+          "cached": "Warning",
+          "comment": ""
+        },
+        {
+          "cell": "B6",
+          "value": "This workbook is evidence, not truth. Some formulas were replaced with values.",
+          "cached": "This workbook is evidence, not truth. Some formulas were replaced with values.",
+          "comment": ""
+        }
+      ]
+    ]
+  },
+  {
+    "sheet": "Management P&L",
+    "state": "visible",
+    "rows": [
+      [
+        {
+          "cell": "A1",
+          "value": "Management P&L — not reconciled",
+          "cached": "Management P&L — not reconciled",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A3",
+          "value": "Line",
+          "cached": "Line",
+          "comment": ""
+        },
+        {
+          "cell": "B3",
+          "value": "Management EUR",
+          "cached": "Management EUR",
+          "comment": ""
+        },
+        {
+          "cell": "C3",
+          "value": "Comment",
+          "cached": "Comment",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A4",
+          "value": "Sales including September deposits",
+          "cached": "Sales including September deposits",
+          "comment": ""
+        },
+        {
+          "cell": "B4",
+          "value": 1050000,
+          "cached": 1050000,
+          "comment": ""
+        },
+        {
+          "cell": "C4",
+          "value": "Cash received means sold",
+          "cached": "Cash received means sold",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A5",
+          "value": "Strategic bank income",
+          "cached": "Strategic bank income",
+          "comment": ""
+        },
+        {
+          "cell": "B5",
+          "value": 50000,
+          "cached": 50000,
+          "comment": ""
+        },
+        {
+          "cell": "C5",
+          "value": "Founder requested this label",
+          "cached": "Founder requested this label",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A6",
+          "value": "Materials and wages",
+          "cached": "Materials and wages",
+          "comment": ""
+        },
+        {
+          "cell": "B6",
+          "value": -620000,
+          "cached": -620000,
+          "comment": ""
+        },
+        {
+          "cell": "C6",
+          "value": "Approximate",
+          "cached": "Approximate",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A7",
+          "value": "Operating costs",
+          "cached": "Operating costs",
+          "comment": ""
+        },
+        {
+          "cell": "B7",
+          "value": -168000,
+          "cached": -168000,
+          "comment": ""
+        },
+        {
+          "cell": "C7",
+          "value": "Some items omitted",
+          "cached": "Some items omitted",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A8",
+          "value": "Management profit",
+          "cached": "Management profit",
+          "comment": ""
+        },
+        {
+          "cell": "B8",
+          "value": 312000,
+          "cached": 312000,
+          "comment": ""
+        },
+        {
+          "cell": "C8",
+          "value": "Used in takeover deck",
+          "cached": "Used in takeover deck",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A9",
+          "value": "Cash per management",
+          "cached": "Cash per management",
+          "comment": ""
+        },
+        {
+          "cell": "B9",
+          "value": 186000,
+          "cached": 186000,
+          "comment": ""
+        },
+        {
+          "cell": "C9",
+          "value": "Includes undeposited promises",
+          "cached": "Includes undeposited promises",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A10",
+          "value": "Inventory",
+          "cached": "Inventory",
+          "comment": ""
+        },
+        {
+          "cell": "B10",
+          "value": 143000,
+          "cached": 143000,
+          "comment": ""
+        },
+        {
+          "cell": "C10",
+          "value": "System value before basement review",
+          "cached": "System value before basement review",
+          "comment": ""
+        }
+      ],
+      [
+        {
+          "cell": "A11",
+          "value": "Receivables",
+          "cached": "Receivables",
+          "comment": ""
+        },
+        {
+          "cell": "B11",
+          "value": 186000,
+          "cached": 186000,
+          "comment": ""
+        },
+        {
+          "cell": "C11",
+          "value": "No bad debt recorded",
+          "cached": "No bad debt recorded",
+          "comment": ""
+        }
+      ]
+    ]
+  }
+]

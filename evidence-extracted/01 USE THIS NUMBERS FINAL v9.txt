@@ -1,0 +1,18 @@
+SHEET READ ME
+A1: USE THIS NUMBERS FINAL v9 (management file)
+A3: Note | B3: Value
+A4: Prepared by | B4: Former finance manager
+A5: Claim | B5: Profit is excellent; please avoid negative adjustments
+A6: Warning | B6: This workbook is evidence, not truth. Some formulas were replaced with values.
+
+SHEET Management P&L
+A1: Management P&L — not reconciled
+A3: Line | B3: Management EUR | C3: Comment
+A4: Sales including September deposits | B4: 1050000 | C4: Cash received means sold
+A5: Strategic bank income | B5: 50000 | C5: Founder requested this label
+A6: Materials and wages | B6: -620000 | C6: Approximate
+A7: Operating costs | B7: -168000 | C7: Some items omitted
+A8: Management profit | B8: 312000 | C8: Used in takeover deck
+A9: Cash per management | B9: 186000 | C9: Includes undeposited promises
+A10: Inventory | B10: 143000 | C10: System value before basement review
+A11: Receivables | B11: 186000 | C11: No bad debt recorded

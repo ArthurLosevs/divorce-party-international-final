@@ -1,0 +1,8 @@
+SHEET Payroll
+A1: Payroll Bonuses Contractors NEW
+A3: Department / label | B3: Expense EUR | C3: Cash paid EUR | D3: Management treatment | E3: Notes
+A4: Event delivery staff | B4: 80000 | C4: 75000 | D4: Admin | E4: Works directly on paid events
+A5: Sales and partnerships | B5: 72000 | C5: 68000 | D5: COGS | E5: Commercial team
+A6: Office and finance | B6: 96000 | C6: 88000 | D6: Admin | E6: Includes former finance manager
+A7: TOTAL | B7: 248000 | C7: 231000 | E7: Opening unpaid payroll €15k; closing amount not calculated
+A8: Founder ‘bonus’ | B8: 110000 | C8: 110000 | D8: Payroll | E8: No employment approval; see owner card

@@ -1,0 +1,389 @@
+## Agent 2 — Independent second review
+
+I completed this **without using Agent 1's conclusions, any classmate/group answer, or web reconstruction**. I treated the bank, signed/customer evidence and third-party confirmations as stronger than management spreadsheets, consistent with the case's own evidence hierarchy. 00 BOARD ORDER READ FIRST(2)
+
+### Independent baseline conclusion
+
+My reconstructed baseline at **31 August 2026** is:
+
+| Key result | Agent 2 conclusion |
+|---|---:|
+| Revenue | **€960,000** |
+| Corrected profit | **€65,000** |
+| Closing cash | **€60,000** |
+| Net trade receivables | **€168,000** |
+| Closing inventory | **€112,000** |
+| Net PPE | **€191,000** |
+| Total assets | **€531,000** |
+| Total liabilities | **€406,000** |
+| Closing equity | **€125,000** |
+| Management claimed profit | **€312,000 — reject** |
+
+The €60,000 closing cash and €131,000 loan principal are independently confirmed after takeover. 11 Evidence Received After Take…
+
+My most important unresolved judgment is **inventory**: €112,000 is my primary accounting reconstruction, but the 31 August physical-count evidence supports a plausible **€121,000 alternative**, producing a €9,000 difference in inventory and profit. The €24,000 depreciation estimate is also less robust than the revenue, bank, debt, bad-debt and legal-provision numbers.
+
+---
+
+# 1. The 25 material judgments
+
+**FS effect abbreviations:**  
+**P** = profit, **C** = cash, **A** = assets, **L** = liabilities, **E** = equity.  
+Effects below describe the correct accounting treatment, with correction-from-management noted where material.
+
+| ID | Independent conclusion | Strongest evidence | Strongest challenge / alternative | Financial statement effect | Confidence | Missing evidence | What would change my answer |
+|---|---|---|---|---|---|---|---|
+| **D041** | Treat the two September receipts, **€90k total**, as **customer deposits / contract liabilities**, not August revenue. | Contracts show €60k delivery 15 Sep and €30k delivery 24 Sep; nothing delivered by 31 Aug. 04 Contracts Returns and Angry … Bank shows both cash receipts before year-end. 02 Bank Export August(2) | Could only be August revenue if performance had actually occurred before 31 Aug despite later delivery dates. | Correct transaction: **C +90, A +90, L +90, P/E 0**. Correction vs management: **P -90, L +90, E -90**. | **High** | Any pre-31-Aug acceptance/delivery evidence. | Proof that goods/services were delivered and accepted by 31 Aug. |
+| **D042** | The **€50k bank advance is borrowing**, not income. | Signed/bank evidence says loan requiring repayment. 09 Loans Owner Card and Legal P… Bank receipt is identifiable as bank facility. 02 Bank Export August(2) | Alternative only if agreement were actually a grant/non-repayable funding. | **C/A +50, L +50, P/E 0**. Correction vs management: **P -50, L +50, E -50**. | **High** | No material evidence missing. | A binding document stating no repayment obligation. |
+| **D043** | **Pack-O-Matic €60k: capitalize as PPE.** | Equipment invoice identifies machine, installed 10 May. 06 Purchases Invoices and Goods… Asset workbook says available for use immediately. | Could fail capitalization if company does not control/own it, or purchase is actually service/lease. | **C -60; gross PPE A +60; no immediate P effect except D074 depreciation.** Versus management repair treatment, pre-depreciation P and A rise €60k. | **High** | Title/ownership paperwork and useful life. | Evidence machine is leased, not controlled, or has no enduring benefit. |
+| **D044** | **Photo booth €20k: capitalize as PPE.** | Third-party equipment invoice; available for use 10 May. 06 Purchases Invoices and Goods… | Could arguably be promotional inventory/short-lived marketing item if not a controlled long-term asset. | **C -20; gross PPE A +20; no immediate P effect except depreciation.** | **High** | Ownership/useful-life evidence. | Evidence it was consumed in one campaign or not controlled after purchase. |
+| **D045** | **€10k replacement belt, cleaning and calibration = repair expense.** | Invoice says work merely restored normal output and did **not** increase capacity or useful life. 06 Purchases Invoices and Goods… | Capitalize only if technical evidence shows enhancement or life extension. | **P -10, C -10, A -10 cash, E -10; no PPE addition.** | **High** | Detailed engineer report, though existing evidence is strong. | Technical evidence proving material enhancement or useful-life extension. |
+| **D046** | **€70k villa reservation = owner distribution**, not marketing/business expense or company asset. | Villa is in founder's personal name; no customer meeting occurred. 09 Loans Owner Card and Legal P… | Could be business travel/marketing only with genuine corporate purpose and recoverability. | **C/A -70, E -70, P 0, L 0.** | **High** | Contract, refund rights, corporate authorization. | Evidence company owns the reservation/right and it was genuinely for business. |
+| **D047** | **€40k other owner-card spending = owner distribution**, not payroll expense. | Bank confirms €40k chairman card outflow. 02 Bank Export August(2) Payroll workbook's €110k founder "bonus" says no employment approval and points to owner card; €70k + €40k exactly equals that €110k, so booking both would duplicate cash. | Some of the €40k could contain genuine business spending or approved remuneration. | **C/A -40, E -40, P 0.** If treated as valid expense instead, P falls €40k but closing E is unchanged relative to distribution. | **Medium** | Card statement, receipts, employment/bonus approval. | Itemised receipts proving genuine business expense or formally approved salary/bonus. |
+| **D048** | **€405k physical-product materials consumed = COGS** in baseline. | Warehouse evidence explicitly states materials consumed on valid delivered sales were €405k. 05 Warehouse Count Marta Notes | Physical count implies **€396k** consumption if the €143k count is treated as authoritative closing inventory before impairment. | Baseline: **P -405; inventory A -405; E -405. Cash is driven by purchases/payments, not consumption.** | **Medium** | Detailed SKU roll-forward and reconciliation of €9k count difference. | A reconciled physical count proving closing stock €143k at cost with no unrecorded movement, which would imply €396k consumption. |
+| **D049** | **€80k event-delivery staff payroll = COGS**, not admin. | Payroll workbook: "Event delivery staff", €80k expense, note "Works directly on paid events"; cash paid €75k. | If staff were permanent general employees with little direct event work, admin classification could be argued. | Expense already exists; **classification changes gross profit, not total profit**. For this row: P -80, C -75, current unpaid +5 absent opening allocation. | **High** | Timesheets/job-cost records. | Evidence work was primarily administrative rather than event delivery. |
+| **D056** | Recognize **€24k period depreciation**. | Assets workbook states independent schedule estimate €24k; additions were available for use from 10 May. | No useful lives, residual values or asset-by-asset depreciation schedule supplied. | **P -24, A -24 via accumulated depreciation, E -24, C 0.** | **Medium** | Useful lives, depreciation method, opening PPE register. | A supportable asset schedule yielding a materially different amount. |
+| **D057** | Recognize **€18k bad-debt expense / specific allowance or write-off** for R-17. | Liquidator says no distribution expected; later notice confirms condition existed at 31 Aug. 11 Evidence Received After Take… Contracts file also says liquidation condition existed at reporting date. 04 Contracts Returns and Angry … | If a secured recovery or distribution becomes probable, loss could be lower. | **P -18, A/AR -18, E -18, C 0.** | **High** | Liquidator recovery schedule, if any. | Credible evidence of recoverable proceeds. |
+| **D058** | Damaged basement stock should be **written down €22k to zero**. Do **not** automatically book the separate €2k disposal quote as inventory. | Count says stock is wet/unsaleable; external assessment says carrying value €22k has no saleable value. 05 Warehouse Count Marta Notes 11 Evidence Received After Take… | €2k disposal cost might require a separate provision if a present obligation existed by 31 Aug. | **P -22, inventory A -22, E -22, C 0.** | **High** on €22k; **Medium** on €2k non-recognition | Evidence of legal/contractual obligation to dispose at 31 Aug. | Salvage evidence >0, or a binding disposal obligation requiring an additional €2k provision. |
+| **D059** | Recognize **€25k legal provision**. | External counsel says claim was probable at 31 Aug; best estimate €25k, range €20k-€30k. 09 Loans Owner Card and Legal P… | Actual settlement may fall anywhere in range. | **P -25, L +25, E -25, C 0.** | **High** | Detailed legal probability analysis/settlement status. | Counsel revises probability below probable or best estimate materially changes. |
+| **D064** | Recognize **NorthStar €180k revenue**. | Signed/customer evidence says boxes accepted 12 Feb. 04 Contracts Returns and Angry … Bank collected €180k. 02 Bank Export August(2) | Customer-name variations could create matching risk, but contract/bank amounts align. | **P +180; C/A +180; E +180. Closing AR 0.** | **High** | No material missing evidence. | Evidence acceptance was cancelled/refunded or sale belonged to another entity. |
+| **D065** | Recognize **Freedom Festivals €200k revenue**; €58k remains receivable. | Accepted 18 Mar; document says only €142k collected and €58k remains. 04 Contracts Returns and Angry … | Potential collectability issue, but none supplied beyond normal open balance. | **P +200; C +142; AR +58; E +200.** | **High** | Subsequent collection/credit-note evidence. | Valid cancellation, return or concession reducing consideration. |
+| **D066** | Recognize **Phoenix €100k event revenue**; €30k receivable. | Event completed 29 Apr; final customer acceptance by email. 04 Contracts Returns and Angry … Bank collected €70k. 02 Bank Export August(2) | Email acceptance is less formal than signed paper, but service completion is strong. | **P +100; C +70; AR +30; E +100.** | **High** | Full acceptance email/complaint history. | Evidence the event was incomplete or consideration was disputed before 31 Aug. |
+| **D067** | Recognize **Liberty €120k revenue**; €25k receivable. | Delivered 20 Jun; customer accepted in full. 04 Contracts Returns and Angry … Bank collected €95k. 02 Bank Export August(2) | No substantial challenge from existing evidence. | **P +120; C +95; AR +25; E +120.** | **High** | None material. | Valid credit note/return showing acceptance was reversed. |
+| **D068** | **Do not recognize €90k September events as August revenue**; record contract liability. | Both events explicitly undelivered as of 31 Aug. 04 Contracts Returns and Angry … | Same cut-off challenge as D041. | **C/A +90; L +90; P/E 0.** | **High** | Pre-31-Aug performance evidence. | Evidence substantive service/delivery occurred before year-end. |
+| **D071** | Closing specific bad-debt allowance/write-off = **€18k**. Gross AR €186k → net AR **€168k**. | Liquidator confirms no recovery. 11 Evidence Received After Take… | Technically could present as allowance rather than direct write-off; net amount identical. | **P -18, A -18, E -18.** | **High** | Whether legal write-off was processed in ledger. | Evidence of expected recovery. |
+| **D072** | Damaged inventory write-off = **€22k**. | Independent stock assessment confirms €22k carrying value is unsaleable. 11 Evidence Received After Take… | Separate €2k disposal quote is not itself inventory carrying value. | **P -22, A -22, E -22.** | **High** | Salvage/insurance recovery and disposal obligation. | Saleable value or enforceable reimbursement. |
+| **D073** | Legal provision = **€25k baseline**; disclose **€20k-€30k range**. | Independent lawyer confirmation. 11 Evidence Received After Take… | Range indicates estimation uncertainty. | **P -25, L +25, E -25.** | **High** | Settlement information. | New counsel estimate or probability assessment. |
+| **D074** | Period depreciation = **€24k baseline**. | Assets workbook's independent schedule estimate. | Useful lives/method are not evidenced; amount cannot be independently recomputed from original data. | **P -24, A -24, E -24, C 0.** | **Medium** | PPE register, useful lives, residuals, method. | A documented schedule supporting another figure. |
+| **D075** | **Closing inventory €112k baseline.** Calculation: €80 opening + €459 purchases - €405 consumed - €22 write-off = €112. | Opening €80k, purchases €459k and consumption €405k are explicitly stated. 05 Warehouse Count Marta Notes Third-party invoices confirm €459k purchases. 06 Purchases Invoices and Goods… | Physical count shows €143k physically present including €22k damaged → **€121k saleable physical-count alternative**. 05 Warehouse Count Marta Notes | Baseline A €112. Relative to €121 alternative, **P/A/E are €9k lower**. | **Medium** | SKU-level reconciliation explaining €9k difference. | A reconciled count showing €143k at cost is the correct pre-write-down balance; then use €121k closing inventory and €396k materials consumption. |
+| **D091** | **Approve the corrected accounts as the valuation baseline, but only as a controlled/provisional reconstruction**, not as audited or uncertainty-free accounts. | Bank, customer and external evidence reconciles coherently; case specifically requires corrections before valuation. | Inventory and depreciation remain medium-confidence; opening equity is inferred. | No direct journal entry. Prevents valuation from using inflated figures. | **High** for rejecting management accounts; **Medium-High** for baseline approval | Final inventory reconciliation, PPE schedule, earn-out terms. | New evidence materially alters profit/assets or prevents reconciliation. |
+| **D100** | **Do not use management's €312k claimed profit for earn-out.** Use corrected accounting profit **€65k as the starting point**, then apply only adjustments required by the signed earn-out contract. | Management workbook itself says P&L is not reconciled; management messages explicitly attempted to classify deposits as revenue and bank loan as income. 10 Email and WhatsApp Dump DO N… | An earn-out is contractual: the signed SPA could define a non-GAAP measure different from corrected accounting profit. | No journal entry. Valuation/earn-out basis falls from €312k to €65k before contract-specific adjustments. | **High** rejecting €312k; **Medium** on final earn-out metric | Signed earn-out / purchase agreement definition. | A binding contract explicitly defines the earn-out using another metric. |
+
+---
+
+# A. Corrected Profit and Loss Statement
+
+**EUR thousands**
+
+| Profit and Loss Statement | €k |
+|---|---:|
+| Revenue | **960** |
+| **Cost of sales** | |
+| Physical product materials consumed | (405) |
+| Event-delivery staff payroll | (80) |
+| Damaged inventory write-off | (22) |
+| **Total cost of sales** | **(507)** |
+| **Gross profit** | **453** |
+| Sales & partnerships payroll | (72) |
+| Office & finance payroll | (96) |
+| Rent | (48) |
+| Marketing | (55) |
+| Software | (16) |
+| Utilities | (12) |
+| Machine repair | (10) |
+| Depreciation | (24) |
+| Bad-debt expense | (18) |
+| Legal provision expense | (25) |
+| **Total operating expenses** | **(376)** |
+| **Operating profit** | **77** |
+| Interest expense | (12) |
+| **Profit before tax / corrected profit** | **€65k** |
+
+VAT and corporate income tax are outside the case per the board instructions. 00 BOARD ORDER READ FIRST(2)
+
+The **€110k founder "bonus" is deliberately excluded from P&L**: the evidence links it to the same €70k villa plus €40k owner-card transactions, so treating it as payroll as well as owner spending would double count the cash. I classify the €110k as distributions.
+
+The management result was €312k. The clean high-level bridge is:
+
+| Management-to-corrected profit bridge | €k |
+|---|---:|
+| Management claimed profit | 312 |
+| Remove September deposits from revenue | (90) |
+| Remove bank borrowing from income | (50) |
+| Correct net understatement/misclassification of expenses | (107) |
+| **Corrected profit** | **65** |
+
+Management's €312k therefore overstates baseline accounting profit by **€247k**.
+
+---
+
+# B. Cash Flow Statement
+
+I use the **direct method** and classify interest paid as operating. If another analyst presents interest as financing, only the operating/financing subtotals change; closing cash does not.
+
+**EUR thousands**
+
+| Cash Flow Statement | €k |
+|---|---:|
+| **Operating cash flows** | |
+| Collections from opening/current receivables | 809 |
+| September customer deposits received | 90 |
+| **Total operating cash receipts** | **899** |
+| Supplier payments | (378) |
+| Payroll paid | (231) |
+| Rent | (48) |
+| Marketing | (55) |
+| Software | (16) |
+| Utilities | (12) |
+| Repair | (10) |
+| Interest paid | (10) |
+| **Net operating cash flow** | **139** |
+| **Investing cash flows** | |
+| Packaging machine | (60) |
+| Photo booth | (20) |
+| **Net investing cash flow** | **(80)** |
+| **Financing cash flows** | |
+| New bank borrowing | 50 |
+| Principal repayment | (19) |
+| Owner distributions | (110) |
+| **Net financing cash flow** | **(79)** |
+| **Net decrease in cash** | **(20)** |
+| Opening cash | 80 |
+| **Closing cash** | **€60k** |
+
+The bank statement itself rolls from €80k opening cash to €60k closing cash and records the major receipts/outflows above. 02 Bank Export August(2)
+
+---
+
+# C. Balance Sheet at 31 August 2026
+
+**EUR thousands**
+
+| Assets | €k |
+|---|---:|
+| Cash | **60** |
+| Trade receivables, gross | 186 |
+| Less: R-17 allowance/write-off | (18) |
+| Trade receivables, net | **168** |
+| Inventory | **112** |
+| PPE at cost | 260 |
+| Less: accumulated depreciation | (69) |
+| PPE, net | **191** |
+| **Total assets** | **€531k** |
+
+| Liabilities and equity | €k |
+|---|---:|
+| Supplier payables | **126** |
+| Payroll payable | **32** |
+| Customer deposits / contract liabilities | **90** |
+| Accrued interest | **2** |
+| Legal provision | **25** |
+| Bank loan principal | **131** |
+| **Total liabilities** | **406** |
+| Closing equity | **125** |
+| **Total liabilities + equity** | **€531k** |
+
+I have **not** split the €131k loan between current and non-current because maturity evidence was not supplied.
+
+---
+
+# D. Supporting schedules
+
+## Revenue and receivables
+
+The four specific contracts are supported by delivery/acceptance evidence. 04 Contracts Returns and Angry …
+
+| Revenue source | Revenue €k | Cash collected €k | Gross closing AR €k |
+|---|---:|---:|---:|
+| NorthStar | 180 | 180 | - |
+| Freedom Festivals | 200 | 142 | 58 |
+| Phoenix | 100 | 70 | 30 |
+| Liberty Hotels | 120 | 95 | 25 |
+| Web — Finally Single | 270 | 250 | 20 |
+| Web — Never Call Back | 90 | 37 | 53 |
+| **Total current-period sales** | **960** | **774** | **186** |
+| R-17 bad-debt allowance/write-off |  |  | **(18)** |
+| **Net closing AR** |  |  | **168** |
+
+The September €60k and €30k cash receipts are excluded from revenue and carried as liabilities. 04 Contracts Returns and Angry …
+
+## Inventory and COGS
+
+| Inventory roll-forward | €k |
+|---|---:|
+| Opening inventory | 80 |
+| Purchases received | 459 |
+| Goods available | 539 |
+| Materials consumed | (405) |
+| Closing inventory before impairment | 134 |
+| Damaged basement stock write-off | (22) |
+| **Closing inventory — baseline** | **112** |
+
+The conflicting physical count is explicit: €79k + €42k saleable materials and €22k damaged stock = €143k physically present/system value. 05 Warehouse Count Marta Notes
+
+Hence the **physical-count alternative is €121k after the €22k write-off**, versus my €112k roll-forward.
+
+## Payroll
+
+| Payroll schedule | Expense €k | Cash €k |
+|---|---:|---:|
+| Event-delivery staff | 80 | 75 |
+| Sales & partnerships | 72 | 68 |
+| Office & finance | 96 | 88 |
+| **Operating payroll** | **248** | **231** |
+
+Opening unpaid payroll is €15k. Therefore:
+
+**€15k + €248k - €231k = €32k closing payroll payable.**
+
+The separate €110k founder "bonus" is excluded from payroll because it duplicates the villa/card outflows and lacks employment approval.
+
+## PPE and depreciation
+
+| PPE schedule | Cost €k |
+|---|---:|
+| Opening PPE cost | 180 |
+| Packaging machine | 60 |
+| Photo booth | 20 |
+| **Closing PPE cost** | **260** |
+
+| Accumulated depreciation | €k |
+|---|---:|
+| Opening accumulated depreciation | 45 |
+| Period depreciation | 24 |
+| **Closing accumulated depreciation** | **69** |
+| **Net PPE** | **191** |
+
+The €10k belt/calibration expenditure is repair expense because the supplier states it restored rather than improved the equipment. 06 Purchases Invoices and Goods…
+
+## Debt and interest
+
+| Debt schedule | €k |
+|---|---:|
+| Opening loan principal | 100 |
+| New borrowing | 50 |
+| Principal repaid | (19) |
+| **Closing loan principal** | **131** |
+
+| Interest schedule | €k |
+|---|---:|
+| Period interest expense | 12 |
+| Interest paid | (10) |
+| **Closing interest payable** | **2** |
+
+Both closing figures are externally confirmed. 11 Evidence Received After Take…
+
+## Supplier payables
+
+Third-party invoices show €459k purchases and €126k unpaid at 31 August. 06 Purchases Invoices and Goods…
+
+Bank supplier payments total **€378k**.
+
+Therefore the implied opening payable is:
+
+**Opening AP €45k + purchases €459k - payments €378k = closing AP €126k.**
+
+The €45k assumption is especially plausible because Event Things has a €114k current-period invoice with €59k unpaid, meaning only €55k relates to that invoice, while the bank shows €100k paid to the event supplier — an unexplained €45k excess consistent with settlement of an opening payable.
+
+It is still an **inference**, not a directly supplied opening AP confirmation.
+
+## Equity and distributions
+
+My reconstructed opening balance sheet is:
+
+| Opening balance | €k |
+|---|---:|
+| Cash | 80 |
+| Opening AR inferred from "Old customer AR settlement" | 35 |
+| Inventory | 80 |
+| Net PPE | 135 |
+| **Opening assets** | **330** |
+| Supplier payable — inferred | 45 |
+| Payroll payable | 15 |
+| Bank loan | 100 |
+| **Opening liabilities** | **160** |
+| **Implied opening equity** | **170** |
+
+Then:
+
+**Opening equity €170k + corrected profit €65k - owner distributions €110k = closing equity €125k.**
+
+The bank specifically describes the €35k January receipt as an **old customer AR settlement**, supporting the opening receivable inference. 02 Bank Export August(2)
+
+---
+
+# E. Reconciliations
+
+These are the core checks I would use before approving the reconstruction:
+
+| Reconciliation | Result |
+|---|---:|
+| Cash | **€80 + €949 inflows - €969 outflows = €60** |
+| AR | **€35 opening + €960 revenue - €809 collections - €18 write-off = €168** |
+| Inventory | **€80 + €459 - €405 - €22 = €112** |
+| Supplier AP | **€45 + €459 - €378 = €126** |
+| Payroll payable | **€15 + €248 - €231 = €32** |
+| PPE cost | **€180 + €80 = €260** |
+| Accumulated depreciation | **€45 + €24 = €69** |
+| Net PPE | **€260 - €69 = €191** |
+| Loan principal | **€100 + €50 - €19 = €131** |
+| Interest payable | **€0 + €12 - €10 = €2** |
+| Equity | **€170 + €65 - €110 = €125** |
+| Balance sheet | **€531 assets = €406 liabilities + €125 equity** |
+
+The balance is a **consistency check, not proof** that every underlying input is correct. In particular, the inventory, depreciation and opening-equity inputs remain judgmental.
+
+---
+
+# F. Uncertainty register
+
+| Issue | Baseline | Credible alternative / uncertainty | Financial impact |
+|---|---|---|---|
+| **Closing inventory** | €112k | Physical-count basis €121k | Alternative raises inventory, profit and equity by **€9k** |
+| **Materials consumed** | €405k | Physical count implies €396k | Same €9k inverse effect |
+| **Depreciation** | €24k | Cannot independently recompute without useful lives | Unquantified until PPE schedule obtained |
+| **Legal provision** | €25k | Lawyer's range €20k-€30k | Profit/equity **+€5k / -€5k** around baseline |
+| **€2k disposal cost** | Not recognized | Provision may be required if present obligation existed | Potential additional **€2k expense/liability** |
+| **Opening AR** | €35k | Inferred from bank description, not opening ledger | Mainly affects opening equity/revenue attribution |
+| **Opening supplier payable** | €45k | Inferred from supplier/bank reconciliation | Mainly affects opening equity and cash-flow reconstruction |
+| **Opening equity** | €170k | Derived, not externally confirmed | Changes if opening balance assumptions change |
+| **Owner distributions** | €110k | €40k card could contain bona fide business costs; compensation argument possible | Reclassification to expense lowers profit/earn-out but may leave closing equity unchanged |
+| **Insurance** | **No amount booked** | No insurance policy, invoice, payment, prepaid balance or coverage period exists in supplied evidence | Cannot legitimately invent an insurance expense or asset |
+| **Loan maturity** | €131k debt total | Current/non-current split unknown | Presentation only unless covenant implications |
+| **Earn-out metric** | Corrected profit €65k starting point | Contract may define EBITDA/adjusted profit | Valuation/earn-out remains contract-dependent |
+
+On **insurance**, I found no original evidence supporting a numeric insurance balance or expense. Therefore I have made **no insurance adjustment**. An analyst who inserts one without a policy/invoice is using an assumption as fact.
+
+A useful evidence-based profit sensitivity, **before unresolved depreciation or insurance changes**, is approximately:
+
+- **€60k** if legal provision is €30k and inventory remains €112k.
+- **€65k baseline**.
+- **€74k** if physical-count inventory €121k is adopted.
+- **€79k** if inventory is €121k and legal provision is only €20k.
+
+---
+
+# G. Board recommendation
+
+The company is **profitable on the reconstructed baseline, but nowhere near management's claimed level**. Corrected profit of **€65k** is only about **6.8% of revenue**, versus the €312k presentation used by management. Closing cash is only €60k while confirmed and accrued obligations are substantial.
+
+I would recommend the board **continue the underlying operating business conditionally**, because the delivered sales themselves appear real and supported by customer/bank evidence, but **freeze valuation and any earn-out calculation based on the €312k management profit**.
+
+Before a final acquisition valuation or earn-out certification, I would require: a SKU-level inventory reconciliation resolving the €9k conflict; an asset-level depreciation schedule with useful lives; complete founder-card receipts and formal treatment of the €110k distributions; confirmation of opening AR/AP/equity; and the signed earn-out definition. Controls should immediately prohibit owner personal spending, require revenue cut-off tied to delivery/acceptance, reconcile bank/AR/AP monthly, require formal physical inventory counts, and force month-end accrual/provision/depreciation entries.
+
+---
+
+# Likely areas of disagreement with another analyst
+
+| Area | My position | Reasonable competing position |
+|---|---|---|
+| **Inventory €112k vs physical-count alternative** | **€112k baseline** | **€121k** based directly on the 31 Aug count after removing €22k damaged stock |
+| **Materials consumed** | **€405k** | **€396k** to make the physical count reconcile |
+| **Depreciation** | **€24k** | Different amount because useful lives/methods are not provided |
+| **Insurance** | **No adjustment — no evidence** | Another analyst may infer an insurance/prepayment figure, but I would reject that without evidence |
+| **Opening balances / equity** | AR €35k, AP €45k, equity €170k inferred | Another analyst may refuse to infer one or both opening balances |
+| **Owner distributions** | **€110k distribution**, not expense | Some/all €40k card spending or founder "bonus" could be remuneration/business expense if later evidence supports it |
+| **Legal provision** | **€25k** | €20k or €30k could be argued within counsel's range, although €25k is the stated best estimate |
+| **Supplier opening payable assumption** | **€45k** | Could be another type of prior supplier payment/prepayment, although €45k reconciles exactly |
+| **Damaged-stock disposal €2k** | Disclose; no separate provision without obligation evidence | Another analyst may accrue the €2k immediately |
+| **Interest cash-flow classification** | Operating | Financing is an alternative presentation; closing cash unchanged |
+| **Earn-out profit basis** | Reject €312k; **€65k corrected profit is starting point** | Signed earn-out agreement may specify EBITDA or another contractual measure |
+| **Management profit €312k** | **Not acceptable accounting profit** | Only usable if the acquisition contract explicitly and intentionally defines the earn-out by that figure, irrespective of accounting correctness |
+
+### Final Agent 2 position
+
+**Baseline accounts:** revenue **€960k**, profit **€65k**, cash **€60k**, assets **€531k**, liabilities **€406k**, equity **€125k**.
+
+**Most material challenge:** the inventory evidence creates a genuine **€9k unresolved difference**. That uncertainty should be shown openly rather than hidden by forcing the balance sheet to agree.
+
+**D100:** I would **not certify the €312k management profit for an earn-out**. The management messages themselves show attempts to book September deposits as August sales and borrowing as income, making that number unsuitable for valuation. 10 Email and WhatsApp Dump DO N…

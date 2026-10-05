@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+test-results/
+playwright-report/
+*.tsbuildinfo
+evidence-extracted/previews/
+.local-tools/
+review-draft*.json
+*.log
+.pnpm-store/
+.vercel/
+tmp/
+.env*
+!.env.example
+group-reference-erika.json
+group reference erika.md
